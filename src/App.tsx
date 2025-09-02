@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Products from "./pages/Products";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import TermsAndConditions from "./pages/TermsAndConditions";
 import "./index.css";
 
 const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ function AppWithRedirect() {
           <Route path="/products" element={<Products />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
         </Routes>
       </div>
     </TooltipProvider>

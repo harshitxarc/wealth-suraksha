@@ -42,17 +42,11 @@ const Navigation = () => {
   };
 
   const navItems = [
-    // Show Home only if not on home page
-    ...(location.pathname !== "/" ? [
-      { name: "Home", href: "/", type: "link" },
-    ] : []),
+    { name: "Home", href: "/", type: "link" },
     { name: "Services", href: "/services", type: "link" },
     { name: "Products", href: "/products", type: "link" },
     { name: "Blog", href: "/blog", type: "link" },
-    ...(location.pathname === "/" ? [
-      { name: "Features", href: "#features", onClick: () => scrollToSection('features'), type: "scroll" },
-      // Pricing removed
-    ] : [])
+    { name: "Terms", href: "/terms", type: "link" }
   ];
 
   return (
@@ -76,29 +70,13 @@ const Navigation = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
             {navItems.map((item) => (
-              item.type === "link" ? (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`text-sm transition-all duration-300 ${location.pathname === item.href ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
-                >
-                  {item.name}
-                </Link>
-              ) : (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    if (item.onClick) {
-                      item.onClick();
-                    }
-                  }}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-all duration-300"
-                >
-                  {item.name}
-                </a>
-              )
+              <Link
+                key={item.name}
+                to={item.href}
+                className={`text-sm transition-all duration-300 ${location.pathname === item.href ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+              >
+                {item.name}
+              </Link>
             ))}
             <Link to="/contact">
               <Button 
@@ -121,31 +99,14 @@ const Navigation = () => {
               <SheetContent className="bg-[#1B1B1B]">
                 <div className="flex flex-col gap-4 mt-8">
                   {navItems.map((item) => (
-                    item.type === "link" ? (
-                      <Link
-                        key={item.name}
-                        to={item.href}
-                        className={`text-lg transition-colors ${location.pathname === item.href ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
-                        onClick={() => setIsMobileMenuOpen(false)}
-                      >
-                        {item.name}
-                      </Link>
-                    ) : (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="text-lg text-muted-foreground hover:text-foreground transition-colors"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setIsMobileMenuOpen(false);
-                          if (item.onClick) {
-                            item.onClick();
-                          }
-                        }}
-                      >
-                        {item.name}
-                      </a>
-                    )
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className={`text-lg transition-colors ${location.pathname === item.href ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
                   ))}
                   <Link to="/contact">
                     <Button 

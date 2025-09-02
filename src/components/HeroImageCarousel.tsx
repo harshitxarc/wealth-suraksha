@@ -85,30 +85,14 @@ const HeroImageCarousel = () => {
                   ease: [0.25, 0.46, 0.45, 0.94] 
                 }}
               >
-                <motion.img
+                <img
                   src={images[currentIndex]}
                   alt={`CryptoTrade Dashboard ${currentIndex + 1}`}
-                  className="w-full h-full object-cover"
-                  initial={{ scale: 1.05 }}
-                  animate={{ scale: 1 }}
-                  transition={{ duration: 8, ease: "easeOut" }}
+                  className="w-full h-[350px] object-contain rounded-lg shadow-md bg-black/70"
+                  style={{ objectFit: 'contain', width: '100%', height: '350px', backgroundColor: 'rgba(0,0,0,0.7)' }}
                 />
-                
                 {/* Overlay gradient for depth */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-60" />
-                
-                {/* Shimmer effect */}
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -skew-x-12"
-                  initial={{ x: "-100%" }}
-                  animate={{ x: "200%" }}
-                  transition={{ 
-                    duration: 2, 
-                    ease: "easeInOut",
-                    repeat: Infinity,
-                    repeatDelay: 6 
-                  }}
-                />
               </motion.div>
             </AnimatePresence>
           </div>
