@@ -10,7 +10,7 @@ const Blog = () => {
     author: "Sarah Johnson",
     date: "March 15, 2024",
     readTime: "8 min read",
-    image: "/lovable-uploads/21f3edfb-62b5-4e35-9d03-7339d803b980.png",
+    image: "/img-uploads/21f3edfb-62b5-4e35-9d03-7339d803b980.png",
     category: "Market Analysis"
   };
 
@@ -21,7 +21,7 @@ const Blog = () => {
       author: "Michael Chen",
       date: "March 12, 2024",
       readTime: "6 min read",
-      image: "/lovable-uploads/79f2b901-8a4e-42a5-939f-fae0828e0aef.png",
+      image: "/img-uploads/79f2b901-8a4e-42a5-939f-fae0828e0aef.png",
       category: "Technology"
     },
     {
@@ -30,7 +30,7 @@ const Blog = () => {
       author: "Emma Rodriguez",
       date: "March 10, 2024",
       readTime: "7 min read",
-      image: "/lovable-uploads/7335619d-58a9-41ad-a233-f7826f56f3e9.png",
+      image: "/img-uploads/7335619d-58a9-41ad-a233-f7826f56f3e9.png",
       category: "Education"
     },
     {
@@ -39,7 +39,7 @@ const Blog = () => {
       author: "David Kim",
       date: "March 8, 2024",
       readTime: "9 min read",
-      image: "/lovable-uploads/5830bd79-3511-41dc-af6c-8db32d91fc2c.png",
+      image: "/img-uploads/5830bd79-3511-41dc-af6c-8db32d91fc2c.png",
       category: "DeFi"
     },
     {
@@ -48,7 +48,7 @@ const Blog = () => {
       author: "Lisa Thompson",
       date: "March 5, 2024",
       readTime: "5 min read",
-      image: "/lovable-uploads/b6436838-5c1a-419a-9cdc-1f9867df073d.png",
+      image: "/img-uploads/b6436838-5c1a-419a-9cdc-1f9867df073d.png",
       category: "Trading"
     },
     {
@@ -57,7 +57,7 @@ const Blog = () => {
       author: "James Wilson",
       date: "March 3, 2024",
       readTime: "6 min read",
-      image: "/lovable-uploads/a2c0bb3a-a47b-40bf-ba26-d79f2f9e741b.png",
+      image: "/img-uploads/a2c0bb3a-a47b-40bf-ba26-d79f2f9e741b.png",
       category: "Regulation"
     },
     {
@@ -66,7 +66,7 @@ const Blog = () => {
       author: "Alex Turner",
       date: "March 1, 2024",
       readTime: "8 min read",
-      image: "/lovable-uploads/bb50362c-6879-4868-bbc9-c6e051fd8d7d.png",
+      image: "/img-uploads/bb50362c-6879-4868-bbc9-c6e051fd8d7d.png",
       category: "Strategy"
     }
   ];

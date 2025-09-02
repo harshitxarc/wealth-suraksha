@@ -18,7 +18,7 @@ const Products = () => {
         "Automated trading strategies",
         "Multi-monitor support"
       ],
-      image: "/lovable-uploads/c32c6788-5e4a-4fee-afee-604b03113c7f.png"
+      image: "/img-uploads/c32c6788-5e4a-4fee-afee-604b03113c7f.png"
     },
     {
       icon: <Smartphone className="w-12 h-12" />,
@@ -33,7 +33,7 @@ const Products = () => {
         "Price alerts",
         "Offline portfolio viewing"
       ],
-      image: "/lovable-uploads/7cc724d4-3e14-4e7c-9e7a-8d613fde54d0.png"
+      image: "/img-uploads/7cc724d4-3e14-4e7c-9e7a-8d613fde54d0.png"
     },
     {
       icon: <Code className="w-12 h-12" />,
@@ -48,7 +48,7 @@ const Products = () => {
         "Comprehensive documentation",
         "SDK libraries"
       ],
-      image: "/lovable-uploads/bf56a0c6-48e4-49f7-b286-8e3fda9a3385.png"
+      image: "/img-uploads/bf56a0c6-48e4-49f7-b286-8e3fda9a3385.png"
     },
     {
       icon: <Headphones className="w-12 h-12" />,
@@ -63,7 +63,7 @@ const Products = () => {
         "Educational resources",
         "Trading consultation"
       ],
-      image: "/lovable-uploads/86329743-ee49-4f2e-96f7-50508436273d.png"
+      image: "/img-uploads/86329743-ee49-4f2e-96f7-50508436273d.png"
     }
   ];
 

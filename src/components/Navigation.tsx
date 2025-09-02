@@ -67,7 +67,7 @@ const Navigation = () => {
         <nav className="flex items-center justify-between h-full">
           <Link to="/" className="flex items-center gap-2">
             {/* <Command className="w-5 h-5 text-primary" /> */}
-            <img src="/lovable-uploads/ws-logo.png" alt="Wealth Suraksha Logo" className="w-9 h-9 mr-2 rounded-full object-contain shadow" />
+            <img src="/img-uploads/ws-logo.png" alt="Wealth Suraksha Logo" className="w-9 h-9 mr-2 rounded-full object-contain shadow" />
             <span className="font-bold text-base">
               Wealth<span style={{ color: '#4ADE80' }}>Suraksha</span>
             </span>

@@ -5,11 +5,11 @@ import { Button } from "@/components/ui/button";
 
 const HeroImageCarousel = () => {
   const images = [
-    "/lovable-uploads/c32c6788-5e4a-4fee-afee-604b03113c7f.png",
-    "/lovable-uploads/0dbe1b75-2c74-4ff8-ba55-4be4d74abe72.png",
-    "/lovable-uploads/21f3edfb-62b5-4e35-9d03-7339d803b980.png",
-    "/lovable-uploads/79f2b901-8a4e-42a5-939f-fae0828e0aef.png",
-    "/lovable-uploads/86329743-ee49-4f2e-96f7-50508436273d.png",
+    "/img-uploads/create.png",
+    "/img-uploads/destination.png",
+    "/img-uploads/freedom.png",
+    "/img-uploads/success.jpg",
+    "/img-uploads/quality.png",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
