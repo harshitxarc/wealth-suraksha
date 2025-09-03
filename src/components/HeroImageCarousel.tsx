@@ -124,29 +124,6 @@ const HeroImageCarousel = () => {
             </Button>
           </motion.div>
 
-          {/* Enhanced Progress Bar */}
-          {/* {isAutoPlaying && (
-            <div className="absolute bottom-0 left-0 w-full h-1.5 bg-black/30 backdrop-blur-sm">
-              <motion.div
-                className="h-full bg-gradient-to-r from-primary via-purple-400 to-blue-400 relative overflow-hidden"
-                initial={{ width: "0%" }}
-                animate={{ width: "100%" }}
-                transition={{ duration: 4, ease: "linear" }}
-                key={currentIndex}
-              >
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-transparent via-white/50 to-transparent"
-                  animate={{ x: ["0%", "100%"] }}
-                  transition={{ 
-                    duration: 1, 
-                    ease: "easeInOut",
-                    repeat: Infinity,
-                    repeatDelay: 0.5 
-                  }}
-                />
-              </motion.div>
-            </div>
-          )} */}
           
         </div>
       </div>
