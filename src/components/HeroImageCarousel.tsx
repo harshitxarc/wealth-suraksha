@@ -8,7 +8,7 @@ const HeroImageCarousel = () => {
     "/img-uploads/create.png",
     "/img-uploads/destination.png",
     "/img-uploads/freedom.png",
-    "/img-uploads/success.jpg",
+    "/img-uploads/destination.png",
     "/img-uploads/quality.png",
   ];
 
@@ -50,35 +50,31 @@ const HeroImageCarousel = () => {
   };
 
   return (
-    <div className="relative mx-auto max-w-6xl mt-20">
+  // <div className="relative mx-auto max-w-7xl w-full mt-20">
+  <div className="relative w-full mt-20">
       {/* Background Glow Effect */}
       <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-purple-500/20 to-blue-500/20 blur-3xl opacity-30 -z-10" />
       
       <div className="relative perspective-1000">
-        <div className="glass rounded-2xl overflow-hidden relative group shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-500">
+        {/* <div className="glass rounded-2xl overflow-hidden relative group shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-500"> */}
+        <div className="glass rounded-none md:rounded-2xl overflow-hidden relative group shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-500">
           {/* Main Image Container with 3D effect */}
-          <div className="relative aspect-video overflow-hidden">
+          <div className="relative w-full h-[500px] overflow-hidden flex items-center justify-center bg-black/80">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
                 className="relative w-full h-full"
                 initial={{ 
-                  opacity: 0, 
-                  scale: 1.1,
-                  rotateY: 15,
-                  z: -100 
+                  x: "100%",
+                  opacity: 0
                 }}
                 animate={{ 
-                  opacity: 1, 
-                  scale: 1,
-                  rotateY: 0,
-                  z: 0 
+                  x: "0%",
+                  opacity: 1
                 }}
                 exit={{ 
-                  opacity: 0, 
-                  scale: 0.9,
-                  rotateY: -15,
-                  z: 100 
+                  x: "-100%",
+                  opacity: 0
                 }}
                 transition={{ 
                   duration: 0.8, 
@@ -88,8 +84,8 @@ const HeroImageCarousel = () => {
                 <img
                   src={images[currentIndex]}
                   alt={`CryptoTrade Dashboard ${currentIndex + 1}`}
-                  className="w-full h-[350px] object-contain rounded-lg shadow-md bg-black/70"
-                  style={{ objectFit: 'contain', width: '100%', height: '350px', backgroundColor: 'rgba(0,0,0,0.7)' }}
+                  className="w-full h-full max-h-[480px] object-contain rounded-lg shadow-md bg-black/70"
+                  style={{ objectFit: 'contain', width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,0.7)' }}
                 />
                 {/* Overlay gradient for depth */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-60" />

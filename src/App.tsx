@@ -12,6 +12,8 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import "./index.css";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
+import LiveMarket from "@/components/LiveMarket";
 
 const queryClient = new QueryClient();
 
@@ -40,6 +42,8 @@ function AppWithRedirect() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms" element={<TermsAndConditions />} />
         </Routes>
+        <LiveMarket />
+        <WhatsAppFloat />
       </div>
     </TooltipProvider>
   );
