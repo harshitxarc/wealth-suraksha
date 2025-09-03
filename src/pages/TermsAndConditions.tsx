@@ -1,12 +1,31 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { motion } from "framer-motion";
 
 const TermsAndConditions = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted/20">
       <Navigation />
+       <main className="container mx-auto px-4 py-24">
+        <div className="max-w-4xl mx-auto">
+      {/* Hero Section */}
+            <motion.section 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="relative container px-4 pt-40 pb-20"
+            >
+              <div className="text-center max-w-4xl mx-auto">
+                <h1 className="text-5xl md:text-6xl font-bold mb-6">
+                  Terms & <span className="text-primary">Conditions</span>
+                </h1>
+                <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
+                  Please read these terms carefully before using our services
+                </p>
+              </div>
+            </motion.section>
       
-      <main className="container mx-auto px-4 py-24">
+      {/* <main className="container mx-auto px-4 py-24">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
@@ -15,7 +34,7 @@ const TermsAndConditions = () => {
             <p className="text-xl text-muted-foreground">
               Please read these terms carefully before using our services
             </p>
-          </div>
+          </div> */}
 
           <div className="bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 p-8 md:p-12 space-y-8">
             <div className="prose prose-lg max-w-none">

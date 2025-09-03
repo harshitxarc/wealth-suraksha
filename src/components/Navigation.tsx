@@ -51,18 +51,22 @@ const Navigation = () => {
 
   return (
     <header
-      className={`fixed top-3.5 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 rounded-full ${
+      // className={`fixed top-3.5 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 rounded-full ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled 
-          ? "h-14 bg-[#1B1B1B]/40 backdrop-blur-xl border border-white/10 scale-95 w-[90%] max-w-2xl" 
-          : "h-14 bg-[#1B1B1B] w-[95%] max-w-3xl"
+          // ? "h-14 bg-[#1B1B1B]/40 backdrop-blur-xl border border-white/10 scale-95 w-[90%] max-w-2xl" 
+          // : "h-14 bg-[#1B1B1B] w-[95%] max-w-3xl"
+          ? "h-20 bg-card/95 backdrop-blur-xl border-b border-border" 
+          : "h-28 bg-card border-b border-border"
       }`}
     >
-      <div className="mx-auto h-full px-6">
+      {/* <div className="mx-auto h-full px-6"> */}
+      <div className="container mx-auto h-full px-6">
         <nav className="flex items-center justify-between h-full">
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-3">
             {/* <Command className="w-5 h-5 text-primary" /> */}
-            <img src="/img-uploads/ws-logo.png" alt="Wealth Suraksha Logo" className="w-9 h-9 mr-2 rounded-full object-contain shadow" />
-            <span className="font-bold text-base">
+            <img src="/img-uploads/ws-logo.png" alt="Wealth Suraksha Logo" className="w-[56px] h-[90px] mr-2 rounded-full object-contain shadow" />
+            <span className="font-bold text-2xl">
               Wealth<span style={{ color: '#4ADE80' }}>Suraksha</span>
             </span>
           </Link>
