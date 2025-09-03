@@ -3,7 +3,7 @@ import { ArrowRight, Command } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
-import { FeaturesSection } from "@/components/features/FeaturesSection";
+// import { FeaturesSection } from "@/components/features/FeaturesSection";
 import { PricingSection } from "@/components/pricing/PricingSection";
 import LogoCarousel from "@/components/LogoCarousel";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -86,17 +86,7 @@ const Index = () => {
             </Link>
           </motion.div>
         </div>
-
-        {/* <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6 }}
-          className="relative mx-auto max-w-5xl mt-20"
-        >
-          <HeroImageCarousel />
-        </motion.div>
-      </motion.section> */}
-
+      
       </motion.section>
 
       {/* Full-width Image Carousel */}
@@ -109,14 +99,19 @@ const Index = () => {
         <HeroImageCarousel />
       </motion.div>
 
-      {/* Live Ticker */}
+      {/* About Section */}
       <div className="bg-black">
-        <LiveTicker />
+        <AboutSection />
       </div>
 
       {/* Logo Carousel */}
       <div className="bg-black">
         <LogoCarousel />
+      </div>
+
+      {/* Live Ticker */}
+      <div className="bg-black">
+        <LiveTicker />
       </div>
 
       {/* Stats Section */}
@@ -125,14 +120,14 @@ const Index = () => {
       </div>
 
       {/* About Section */}
-      <div className="bg-black">
+      {/* <div className="bg-black">
         <AboutSection />
-      </div>
+      </div> */}
 
-      {/* Features Section */}
+      {/* Features Section
       <div id="features" className="bg-black">
         <FeaturesSection />
-      </div>
+      </div> */}
 
       {/* Security Section */}
       <div className="bg-black">

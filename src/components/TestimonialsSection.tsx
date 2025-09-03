@@ -9,25 +9,25 @@ const testimonials = [
     name: "Michael Chen",
     role: "Professional Trader",
     image: "https://avatars.githubusercontent.com/u/1234567?v=4",
-    content: "The real-time market data and advanced trading features have significantly improved my trading performance. The platform's security measures give me peace of mind."
+    content: "The real-time market data and advanced investing features have significantly improved my investing performance. The platform's security measures give me peace of mind."
   },
   {
     name: "Sarah Johnson",
     role: "Crypto Fund Manager",
     image: "https://avatars.githubusercontent.com/u/2345678?v=4",
-    content: "Wealth Suraksha's institutional-grade tools have transformed our trading strategy. The API integration and automated features have saved us countless hours."
+    content: "Wealth Suraksha's institutional-grade tools have transformed our investing strategy. The API integration and automated features have saved us countless hours."
   },
   {
     name: "David Wilson",
     role: "Early Crypto Investor",
     image: "https://avatars.githubusercontent.com/u/3456789?v=4",
-    content: "The customer support is exceptional, and the platform's intuitive design made getting started with crypto trading seamless. A game-changer for both beginners and pros."
+    content: "The customer support is exceptional, and the platform's intuitive design made getting started with crypto investing seamless. A game-changer for both beginners and pros."
   },
   {
     name: "Emily Zhang",
     role: "DeFi Developer",
     image: "https://avatars.githubusercontent.com/u/4567890?v=4",
-    content: "We've seen remarkable improvements in our trading efficiency since switching to Wealth Suraksha. The smart order routing and liquidity aggregation are particularly impressive."
+    content: "We've seen remarkable improvements in our investing efficiency since switching to Wealth Suraksha. The smart order routing and liquidity aggregation are particularly impressive."
   },
   {
     name: "James Rodriguez",
@@ -39,7 +39,7 @@ const testimonials = [
     name: "Lisa Thompson",
     role: "Portfolio Manager",
     image: "https://avatars.githubusercontent.com/u/6789012?v=4",
-    content: "The platform's ability to handle complex trading strategies while maintaining simplicity in its interface is remarkable. It's been invaluable for our portfolio management."
+    content: "The platform's ability to handle complex investing strategies while maintaining simplicity in its interface is remarkable. It's been invaluable for our portfolio management."
   }
 ];
 

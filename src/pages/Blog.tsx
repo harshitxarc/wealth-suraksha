@@ -5,8 +5,8 @@ import Footer from "@/components/Footer";
 
 const Blog = () => {
   const featuredPost = {
-    title: "The Future of Cryptocurrency Trading: Trends to Watch in 2024",
-    excerpt: "Explore the latest developments in cryptocurrency trading, from DeFi innovations to institutional adoption and regulatory changes.",
+    title: "The Future of Cryptocurrency investing: Trends to Watch in 2024",
+    excerpt: "Explore the latest developments in cryptocurrency investing, from DeFi innovations to institutional adoption and regulatory changes.",
     author: "Sarah Johnson",
     date: "March 15, 2024",
     readTime: "8 min read",
@@ -25,7 +25,7 @@ const Blog = () => {
       category: "Technology"
     },
     {
-      title: "Risk Management in Crypto Trading",
+      title: "Risk Management in Crypto investing",
       excerpt: "Essential strategies to protect your portfolio and manage risk in the volatile cryptocurrency market.",
       author: "Emma Rodriguez",
       date: "March 10, 2024",
@@ -49,11 +49,11 @@ const Blog = () => {
       date: "March 5, 2024",
       readTime: "5 min read",
       image: "/img-uploads/b6436838-5c1a-419a-9cdc-1f9867df073d.png",
-      category: "Trading"
+      category: "investing"
     },
     {
       title: "Regulatory Updates: Global Crypto Landscape",
-      excerpt: "Stay updated on the latest regulatory developments affecting cryptocurrency trading worldwide.",
+      excerpt: "Stay updated on the latest regulatory developments affecting cryptocurrency investing worldwide.",
       author: "James Wilson",
       date: "March 3, 2024",
       readTime: "6 min read",
@@ -61,8 +61,8 @@ const Blog = () => {
       category: "Regulation"
     },
     {
-      title: "Staking vs Trading: Which Strategy is Right for You?",
-      excerpt: "Compare passive income through staking with active trading strategies to find the best approach for your goals.",
+      title: "Staking vs investing: Which Strategy is Right for You?",
+      excerpt: "Compare passive income through staking with active investing strategies to find the best approach for your goals.",
       author: "Alex Turner",
       date: "March 1, 2024",
       readTime: "8 min read",
@@ -71,7 +71,7 @@ const Blog = () => {
     }
   ];
 
-  const categories = ["All", "Market Analysis", "Technology", "Education", "DeFi", "Trading", "Regulation", "Strategy"];
+  const categories = ["All", "Market Analysis", "Technology", "Education", "DeFi", "investing", "Regulation", "Strategy"];
 
   return (
     <div className="min-h-screen bg-black text-foreground">
@@ -236,7 +236,7 @@ const Blog = () => {
             Never miss an update
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Subscribe to our newsletter and get the latest crypto trading insights delivered to your inbox
+            Subscribe to our newsletter and get the latest crypto investing insights delivered to your inbox
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <input

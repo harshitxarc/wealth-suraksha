@@ -4,12 +4,12 @@ const StatsSection = () => {
   const stats = [
     {
       number: "$2.4B+",
-      label: "Trading Volume",
-      description: "Daily trading volume across all markets"
+      label: "investing Volume",
+      description: "Daily investing volume across all markets"
     },
     {
       number: "500K+",
-      label: "Active Traders",
+      label: "Active Investors",
       description: "Global community of verified traders"
     },
     {
@@ -20,7 +20,7 @@ const StatsSection = () => {
     {
       number: "150+",
       label: "Cryptocurrencies",
-      description: "Available trading pairs"
+      description: "Available investing pairs"
     }
   ];
 

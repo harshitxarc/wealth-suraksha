@@ -25,9 +25,17 @@ const Footer = () => {
                 <Button variant="ghost" size="icon" aria-label="Github">
                   <Github className="w-5 h-5" />
                 </Button>
-                <Button variant="ghost" size="icon" aria-label="Instagram">
-                  <Instagram className="w-5 h-5" />
-                </Button>
+                <a
+                  href="https://instagram.com/wealth_suraksha"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                  className="inline-flex"
+                >
+                  <Button variant="ghost" size="icon">
+                    <Instagram className="w-5 h-5"/>
+                  </Button>
+                </a>
               </div>
             </div>
 

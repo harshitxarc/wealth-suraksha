@@ -24,7 +24,7 @@ const NewsletterSection = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Get the latest market insights, trading tips, and platform updates delivered directly to your inbox. 
+              Get the latest market insights, investing tips, and platform updates delivered directly to your inbox. 
               Join over 100,000 traders who rely on our newsletter.
             </p>
 

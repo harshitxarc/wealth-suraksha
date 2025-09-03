@@ -72,7 +72,7 @@ const Contact = () => {
             Get in <span className="text-primary">Touch</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Have questions about crypto trading? Our team of experts is here to help you succeed
+            Have questions about crypto investing? Our team of experts is here to help you succeed
           </p>
         </div>
       </motion.section>
@@ -146,7 +146,7 @@ const Contact = () => {
               <div>
                 <label className="block text-sm font-medium mb-2">Subject</label>
                 <select className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/10 focus:border-primary/50 focus:outline-none">
-                  <option>Trading Support</option>
+                  <option>investing Support</option>
                   <option>Account Issues</option>
                   <option>Technical Problems</option>
                   <option>Partnership Inquiry</option>
@@ -220,12 +220,12 @@ const Contact = () => {
         <div className="max-w-3xl mx-auto space-y-4">
           {[
             {
-              question: "How do I get started with trading?",
-              answer: "Simply create an account, verify your identity, fund your account, and start trading. Our platform guides you through each step."
+              question: "How do I get started with investing?",
+              answer: "Simply create an account, verify your identity, fund your account, and start investing. Our platform guides you through each step."
             },
             {
-              question: "What are your trading fees?",
-              answer: "We offer competitive trading fees starting from 0.1% for makers and 0.2% for takers, with volume discounts available."
+              question: "What are your investing fees?",
+              answer: "We offer competitive investing fees starting from 0.1% for makers and 0.2% for takers, with volume discounts available."
             },
             {
               question: "Is my money safe on your platform?",

@@ -21,8 +21,8 @@ const FAQSection = () => {
       answer: "Absolutely. We use bank-grade security with 95% of funds stored in cold storage, multi-signature wallets, and comprehensive insurance coverage. Your security is our top priority."
     },
     {
-      question: "What are your trading fees?",
-      answer: "Our fees are competitive and transparent. Standard trading fees start at 0.1% and decrease with higher trading volumes. We offer three pricing tiers with additional benefits for higher-volume traders."
+      question: "What are your investing fees?",
+      answer: "Our fees are competitive and transparent. Standard investing fees start at 0.1% and decrease with higher investing volumes. We offer three pricing tiers with additional benefits for higher-volume traders."
     },
     {
       question: "How long do withdrawals take?",
@@ -56,7 +56,7 @@ const FAQSection = () => {
             Frequently Asked Questions
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Find answers to common questions about trading, security, and using our platform
+            Find answers to common questions about investing, security, and using our platform
           </p>
         </motion.div>
 

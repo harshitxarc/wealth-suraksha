@@ -8,14 +8,14 @@ const Products = () => {
     {
       icon: <Monitor className="w-12 h-12" />,
       title: "CryptoTrade Pro",
-      subtitle: "Desktop Trading Platform",
-      description: "Advanced desktop application with professional trading tools, real-time charts, and portfolio management.",
+      subtitle: "Desktop investing Platform",
+      description: "Advanced desktop application with professional investing tools, real-time charts, and portfolio management.",
       features: [
         "Advanced charting tools",
         "Real-time market data",
         "Portfolio analytics",
         "Risk management tools",
-        "Automated trading strategies",
+        "Automated investing strategies",
         "Multi-monitor support"
       ],
       image: "/img-uploads/c32c6788-5e4a-4fee-afee-604b03113c7f.png"
@@ -39,7 +39,7 @@ const Products = () => {
       icon: <Code className="w-12 h-12" />,
       title: "CryptoTrade API",
       subtitle: "Developer Platform",
-      description: "Integrate cryptocurrency trading into your applications with our robust REST and WebSocket APIs.",
+      description: "Integrate cryptocurrency investing into your applications with our robust REST and WebSocket APIs.",
       features: [
         "REST & WebSocket APIs",
         "Real-time market data",
@@ -61,7 +61,7 @@ const Products = () => {
         "Priority ticket resolution",
         "Phone support",
         "Educational resources",
-        "Trading consultation"
+        "investing consultation"
       ],
       image: "/img-uploads/86329743-ee49-4f2e-96f7-50508436273d.png"
     }
@@ -83,7 +83,7 @@ const Products = () => {
             Our <span className="text-primary">Products</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Comprehensive suite of cryptocurrency trading products designed for every type of trader
+            Comprehensive suite of cryptocurrency investing products designed for every type of trader
           </p>
         </div>
       </motion.section>
@@ -148,7 +148,7 @@ const Products = () => {
             Ready to try our products?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Experience the power of professional cryptocurrency trading tools
+            Experience the power of professional cryptocurrency investing tools
           </p>
           <button className="button-gradient px-8 py-3 rounded-lg font-medium">
             Start Free Trial
