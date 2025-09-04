@@ -52,12 +52,11 @@ const HeroImageCarousel = () => {
   return (
   // <div className="relative mx-auto max-w-7xl w-full mt-20">
   <div className="relative w-full mt-20">
-      {/* Background Glow Effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-purple-500/20 to-blue-500/20 blur-3xl opacity-30 -z-10" />
+  {/* Background Glow Effect Removed for Simplicity */}
       
       <div className="relative perspective-1000">
         {/* <div className="glass rounded-2xl overflow-hidden relative group shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-500"> */}
-        <div className="glass rounded-none md:rounded-2xl overflow-hidden relative group shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-500">
+  <div className="glass rounded-none md:rounded-2xl overflow-hidden relative group shadow-2xl transition-all duration-500">
           {/* Main Image Container with 3D effect */}
           <div className="relative w-full h-[350px] overflow-hidden flex items-center justify-center bg-black/80">
             <AnimatePresence mode="wait">
