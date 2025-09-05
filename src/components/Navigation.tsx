@@ -54,14 +54,14 @@ const Navigation = () => {
     { name: "PMS", path: "/products/pms" },
     { name: "Private Equity", path: "/products/private-equity" },
     { name: "Alternate Investment Fund", path: "/products/aif" },
-    { name: "Debt Structure Products", path: "#" },
-    { name: "Real Estate", path: "#" },
-    { name: "Insurance", path: "#" },
-    { name: "Corporate Fixed Deposits", path: "#" },
-    { name: "Bonds", path: "#" },
-    { name: "Debentures", path: "#" },
-    { name: "Loans", path: "#" },
-    { name: "Retirement Schemes", path: "#" }
+    { name: "Debt Structure Products", path: "/products/debt-structure" },
+    { name: "Real Estate", path: "/products/real-estate" },
+    { name: "Insurance", path: "/products/insurance" },
+    { name: "Corporate Fixed Deposits", path: "/products/fixed-deposits" },
+    { name: "Bonds", path: "/products/bonds" },
+    { name: "Debentures", path: "/products/debentures" },
+    { name: "Loans", path: "/products/loans" },
+    { name: "Retirement Schemes", path: "/products/retirement-schemes" }
   ];
 
   const services = [

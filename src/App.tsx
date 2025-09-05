@@ -16,6 +16,14 @@ import MutualFunds from "./pages/products/MutualFunds";
 import PMS from "./pages/products/PMS";
 import PrivateEquity from "./pages/products/PrivateEquity";
 import AIF from "./pages/products/AIF";
+import DebtStructure from "./pages/products/DebtStructure";
+import RealEstate from "./pages/products/RealEstate";
+import Insurance from "./pages/products/Insurance";
+import FixedDeposits from "./pages/products/FixedDeposits";
+import Bonds from "./pages/products/Bonds";
+import Debentures from "./pages/products/Debentures";
+import Loans from "./pages/products/Loans";
+import RetirementSchemes from "./pages/products/RetirementSchemes";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import LiveMarket from "@/components/LiveMarket";
 
@@ -46,6 +54,14 @@ function AppWithRedirect() {
               <Route path="/products/pms" element={<PMS />} />
               <Route path="/products/private-equity" element={<PrivateEquity />} />
               <Route path="/products/aif" element={<AIF />} />
+              <Route path="/products/debt-structure" element={<DebtStructure />} />
+              <Route path="/products/real-estate" element={<RealEstate />} />
+              <Route path="/products/insurance" element={<Insurance />} />
+              <Route path="/products/fixed-deposits" element={<FixedDeposits />} />
+              <Route path="/products/bonds" element={<Bonds />} />
+              <Route path="/products/debentures" element={<Debentures />} />
+              <Route path="/products/loans" element={<Loans />} />
+              <Route path="/products/retirement-schemes" element={<RetirementSchemes />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms" element={<TermsAndConditions />} />
