@@ -13,6 +13,7 @@ import AboutSection from "@/components/AboutSection";
 import SecuritySection from "@/components/SecuritySection";
 import FAQSection from "@/components/FAQSection";
 import NewsletterSection from "@/components/NewsletterSection";
+import PartnersSection from "@/components/PartnersSection";
 import Footer from "@/components/Footer";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import HeroImageCarousel from "@/components/HeroImageCarousel";
@@ -162,6 +163,11 @@ const Index = () => {
       {/* Newsletter Section */}
       <div className="bg-black">
         <NewsletterSection />
+      </div>
+
+      {/* Partners Section */}
+      <div className="bg-background">
+        <PartnersSection />
       </div>
 
       {/* CTA Section */}

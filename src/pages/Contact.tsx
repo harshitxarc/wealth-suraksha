@@ -41,19 +41,19 @@ const Contact = () => {
       address: "PSQ-C1-F04-011, Emaar-The Palm Square, Sector-66, Golf Course Extension Road",
       phone: "9582250626",
       email: "info@wealthsuraksha.com"
-    },
-    {
-      city: "New York",
-      address: "456 Wall Street, New York, NY 10005",
-      phone: "+1 (555) 987-6543",
-      email: "ny@cryptotrade.com"
-    },
-    {
-      city: "London",
-      address: "789 Financial District, London EC2V 8RS, UK",
-      phone: "+44 20 7946 0958",
-      email: "london@cryptotrade.com"
     }
+    // {
+    //   city: "New York",
+    //   address: "456 Wall Street, New York, NY 10005",
+    //   phone: "+1 (555) 987-6543",
+    //   email: "ny@cryptotrade.com"
+    // },
+    // {
+    //   city: "London",
+    //   address: "789 Financial District, London EC2V 8RS, UK",
+    //   phone: "+44 20 7946 0958",
+    //   email: "london@cryptotrade.com"
+    // }
   ];
 
   return (
@@ -72,7 +72,7 @@ const Contact = () => {
             Get in <span className="text-primary">Touch</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Have questions about crypto investing? Our team of experts is here to help you succeed
+            Have any questions? Our team of experts is here to help you succeed
           </p>
         </div>
       </motion.section>
@@ -117,7 +117,7 @@ const Contact = () => {
             <form className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium mb-2">First Name</label>
+                  <label className="block text-sm font-medium mb-2">First Name*</label>
                   <input
                     type="text"
                     className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/10 focus:border-primary/50 focus:outline-none"
@@ -135,7 +135,7 @@ const Contact = () => {
               </div>
               
               <div>
-                <label className="block text-sm font-medium mb-2">Email</label>
+                <label className="block text-sm font-medium mb-2">Email*</label>
                 <input
                   type="email"
                   className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/10 focus:border-primary/50 focus:outline-none"
@@ -144,13 +144,15 @@ const Contact = () => {
               </div>
               
               <div>
-                <label className="block text-sm font-medium mb-2">Subject</label>
+                <label className="block text-sm font-medium mb-2">Choose a service*</label>
                 <select className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/10 focus:border-primary/50 focus:outline-none">
-                  <option>investing Support</option>
-                  <option>Account Issues</option>
-                  <option>Technical Problems</option>
-                  <option>Partnership Inquiry</option>
-                  <option>General Question</option>
+                  <option>Investment</option>
+                  <option>Insurance</option>
+                  <option>Tax Filing</option>
+                  <option>Home Loan</option>
+                  <option>Will Creation</option>
+                  <option>Real Estate</option>
+                  <option>Others</option>
                 </select>
               </div>
               
@@ -180,7 +182,7 @@ const Contact = () => {
             transition={{ delay: 0.4 }}
             className="space-y-6"
           >
-            <h2 className="text-2xl font-bold mb-6">Our Offices</h2>
+            <h2 className="text-2xl font-bold mb-6">Our Office</h2>
             {offices.map((office, index) => (
               <div key={index} className="glass rounded-xl p-6">
                 <h3 className="text-xl font-semibold mb-4">{office.city}</h3>

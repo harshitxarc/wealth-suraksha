@@ -76,7 +76,6 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Home", href: "/", type: "link" },
-    { name: "Services", href: "/services", type: "link" },
     { name: "Blog", href: "/blog", type: "link" },
     { name: "Terms", href: "/terms", type: "link" }
   ];
@@ -113,14 +112,7 @@ const Navigation = () => {
             >
               Home
             </Link>
-            {/* Services link */}
-            <Link
-              key="Services"
-              to="/services"
-              className={`text-sm transition-all duration-300 ${location.pathname === "/services" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
-            >
-              Services
-            </Link>
+            {/* Services link removed, dropdown remains */}
             {/* Our Products, Services dropdown */}
             <NavigationMenu>
               <NavigationMenuList>
@@ -197,8 +189,19 @@ const Navigation = () => {
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-
-              <Collapsible>
+              <SheetContent className="bg-[#1B1B1B]">
+                <div className="flex flex-col gap-4 mt-8">
+                  {/* Home link */}
+                  <Link
+                    key="Home"
+                    to="/"
+                    className={`text-lg transition-colors ${location.pathname === "/" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Home
+                  </Link>
+                  {/* Services Dropdown remains */}
+                  <Collapsible>
                     <CollapsibleTrigger className="flex items-center justify-between w-full text-lg text-muted-foreground hover:text-foreground transition-colors">
                       Services
                       <ChevronDown className="h-4 w-4" />
@@ -216,8 +219,8 @@ const Navigation = () => {
                       ))}
                     </CollapsibleContent>
                   </Collapsible>
-              
-              <Collapsible>
+                  {/* Our Products Dropdown */}
+                  <Collapsible>
                     <CollapsibleTrigger className="flex items-center justify-between w-full text-lg text-muted-foreground hover:text-foreground transition-colors">
                       Our Products
                       <ChevronDown className="h-4 w-4" />
@@ -235,19 +238,24 @@ const Navigation = () => {
                       ))}
                     </CollapsibleContent>
                   </Collapsible>
-
-              <SheetContent className="bg-[#1B1B1B]">
-                <div className="flex flex-col gap-4 mt-8">
-                  {navItems.map((item) => (
-                    <Link
-                      key={item.name}
-                      to={item.href}
-                      className={`text-lg transition-colors ${location.pathname === item.href ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
+                  {/* Blog link */}
+                  <Link
+                    key="Blog"
+                    to="/blog"
+                    className={`text-lg transition-colors ${location.pathname === "/blog" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Blog
+                  </Link>
+                  {/* Terms link */}
+                  <Link
+                    key="Terms"
+                    to="/terms"
+                    className={`text-lg transition-colors ${location.pathname === "/terms" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Terms
+                  </Link>
                   <Link to="/contact">
                     <Button 
                       onClick={() => setIsMobileMenuOpen(false)}

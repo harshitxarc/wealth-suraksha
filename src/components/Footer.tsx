@@ -40,63 +40,46 @@ const Footer = () => {
             </div>
 
             <div className="space-y-5">
-              <h4 className="font-semibold text-lg mb-2 border-b border-white/10 pb-1">Pages</h4>
+              <h4 className="font-semibold text-lg mb-2 border-b border-white/10 pb-1">Our Services</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Home
-                  </Link>
+                  <Link to="/services/investment-services" className="text-sm text-muted-foreground hover:text-primary transition-colors">Investment Services</Link>
                 </li>
                 <li>
-                  <Link to="/services" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Services
-                  </Link>
+                  <Link to="/services/tax-services" className="text-sm text-muted-foreground hover:text-primary transition-colors">Tax Services</Link>
                 </li>
                 <li>
-                  <Link to="/products" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Products
-                  </Link>
+                  <Link to="/services/retirement-services" className="text-sm text-muted-foreground hover:text-primary transition-colors">Retirement Services</Link>
                 </li>
                 <li>
-                  <Link to="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Blog
-                  </Link>
+                  <Link to="/services/insurance-services" className="text-sm text-muted-foreground hover:text-primary transition-colors">Insurance Services</Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Contact
-                  </Link>
+                  <Link to="/services/will-trust-services" className="text-sm text-muted-foreground hover:text-primary transition-colors">Will / Trust Formation Services</Link>
+                </li>
+                <li>
+                  <Link to="/services/loan-services" className="text-sm text-muted-foreground hover:text-primary transition-colors">Loan Services</Link>
+                </li>
+                <li>
+                  <Link to="/services/real-estate-services" className="text-sm text-muted-foreground hover:text-primary transition-colors">Real Estate Services</Link>
                 </li>
               </ul>
             </div>
 
             <div className="space-y-5">
-              <h4 className="font-semibold text-lg mb-2 border-b border-white/10 pb-1">Our Services</h4>
+              <h4 className="font-semibold text-lg mb-2 border-b border-white/10 pb-1">Important Links</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link to="/services#investment" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Investment Services
-                  </Link>
+                  <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Home</Link>
                 </li>
                 <li>
-                  <Link to="/services#tax" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Tax Services
-                  </Link>
+                  <Link to="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors">Blog</Link>
                 </li>
                 <li>
-                  <Link to="/services#retirement" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Retirement Services
-                  </Link>
+                  <Link to="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">Terms of Service</Link>
                 </li>
                 <li>
-                  <Link to="/services#estate" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Estate Planning
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/services#insurance" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                    Insurance Solutions
-                  </Link>
+                  <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact Us</Link>
                 </li>
               </ul>
             </div>
