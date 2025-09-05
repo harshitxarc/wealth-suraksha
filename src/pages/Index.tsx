@@ -21,6 +21,16 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-black text-foreground">
       <Navigation />
+
+      {/* Full-width Image Carousel */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6 }}
+        className="w-full mt-32"
+      >
+        <HeroImageCarousel />
+      </motion.div>
       
       {/* Hero Section */}
       <motion.section 
@@ -90,14 +100,14 @@ const Index = () => {
       </motion.section>
 
       {/* Full-width Image Carousel */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6 }}
         className="w-full"
       >
         <HeroImageCarousel />
-      </motion.div>
+      </motion.div> */}
 
       {/* About Section */}
       <div className="bg-black">

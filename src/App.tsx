@@ -12,6 +12,10 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import "./index.css";
+import MutualFunds from "./pages/products/MutualFunds";
+import PMS from "./pages/products/PMS";
+import PrivateEquity from "./pages/products/PrivateEquity";
+import AIF from "./pages/products/AIF";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import LiveMarket from "@/components/LiveMarket";
 
@@ -38,6 +42,10 @@ function AppWithRedirect() {
           <Route path="/" element={<Index />} />
           <Route path="/services" element={<Services />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/products/mutual-funds" element={<MutualFunds />} />
+              <Route path="/products/pms" element={<PMS />} />
+              <Route path="/products/private-equity" element={<PrivateEquity />} />
+              <Route path="/products/aif" element={<AIF />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms" element={<TermsAndConditions />} />

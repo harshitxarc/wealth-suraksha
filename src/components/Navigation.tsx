@@ -1,7 +1,15 @@
 import { useState, useEffect } from "react";
-import { Command, Menu } from "lucide-react";
+import { Command, Menu, ChevronDown} from "lucide-react";
 import { Button } from "./ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { 
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+} from "./ui/navigation-menu";
+import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
@@ -41,10 +49,34 @@ const Navigation = () => {
     }
   };
 
+  const products = [
+    { name: "Mutual Funds", path: "/products/mutual-funds" },
+    { name: "PMS", path: "/products/pms" },
+    { name: "Private Equity", path: "/products/private-equity" },
+    { name: "Alternate Investment Fund", path: "/products/aif" },
+    { name: "Debt Structure Products", path: "#" },
+    { name: "Real Estate", path: "#" },
+    { name: "Insurance", path: "#" },
+    { name: "Corporate Fixed Deposits", path: "#" },
+    { name: "Bonds", path: "#" },
+    { name: "Debentures", path: "#" },
+    { name: "Loans", path: "#" },
+    { name: "Retirement Schemes", path: "#" }
+  ];
+
+  const services = [
+    "Investment Services",
+    "Tax Services",
+    "Retirement Services",
+    "Insurance Services",
+    "Will / Trust Formation Services",
+    "Loan Services",
+    "Real Estate Services"
+  ];
+
   const navItems = [
     { name: "Home", href: "/", type: "link" },
     { name: "Services", href: "/services", type: "link" },
-    { name: "Products", href: "/products", type: "link" },
     { name: "Blog", href: "/blog", type: "link" },
     { name: "Terms", href: "/terms", type: "link" }
   ];
@@ -73,15 +105,80 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-6">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`text-sm transition-all duration-300 ${location.pathname === item.href ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {/* Home link */}
+            <Link
+              key="Home"
+              to="/"
+              className={`text-sm transition-all duration-300 ${location.pathname === "/" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              Home
+            </Link>
+            {/* Services link */}
+            <Link
+              key="Services"
+              to="/services"
+              className={`text-sm transition-all duration-300 ${location.pathname === "/services" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              Services
+            </Link>
+            {/* Our Products, Services dropdown */}
+            <NavigationMenu>
+              <NavigationMenuList>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-sm text-muted-foreground hover:text-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent">
+                    Services
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    {/* <div className="flex flex-col gap-1 p-3 w-56 bg-popover border border-border rounded-md shadow-lg"> */}
+                    <div className="flex flex-col gap-1 p-3 w-48 bg-popover border border-border rounded-md shadow-lg">
+                      {services.map((service) => (
+                        <a
+                          key={service}
+                          href="#"
+                          className="block px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
+                        >
+                          {service}
+                        </a>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                <NavigationMenuItem>
+                  <NavigationMenuTrigger className="text-sm text-muted-foreground hover:text-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent">
+                    Our Products
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <div className="flex flex-col gap-1 p-3 w-56 bg-popover border border-border rounded-md shadow-lg">
+                      {products.map((product) => (
+                        <Link
+                          key={product.name}
+                          to={product.path}
+                          className="block px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
+                        >
+                          {product.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenuList>
+            </NavigationMenu>
+            {/* Blog link */}
+            <Link
+              key="Blog"
+              to="/blog"
+              className={`text-sm transition-all duration-300 ${location.pathname === "/blog" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              Blog
+            </Link>
+            {/* Terms link */}
+            <Link
+              key="Terms"
+              to="/terms"
+              className={`text-sm transition-all duration-300 ${location.pathname === "/terms" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+            >
+              Terms
+            </Link>
             <Link to="/contact">
               <Button 
                 size="sm"
@@ -100,6 +197,48 @@ const Navigation = () => {
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
+
+              <Collapsible>
+                    <CollapsibleTrigger className="flex items-center justify-between w-full text-lg text-muted-foreground hover:text-foreground transition-colors">
+                      Services
+                      <ChevronDown className="h-4 w-4" />
+                    </CollapsibleTrigger>
+                    <CollapsibleContent className="mt-2 ml-4 space-y-2">
+                      {services.map((service) => (
+                        <a
+                          key={service}
+                          href="#"
+                          className="block py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsMobileMenuOpen(false);
+                          }}
+                        >
+                          {service}
+                        </a>
+                      ))}
+                    </CollapsibleContent>
+                  </Collapsible>
+              
+              <Collapsible>
+                    <CollapsibleTrigger className="flex items-center justify-between w-full text-lg text-muted-foreground hover:text-foreground transition-colors">
+                      Our Products
+                      <ChevronDown className="h-4 w-4" />
+                    </CollapsibleTrigger>
+                    <CollapsibleContent className="mt-2 ml-4 space-y-2">
+                      {products.map((product) => (
+                        <Link
+                          key={product.name}
+                          to={product.path}
+                          className="block py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          {product.name}
+                        </Link>
+                      ))}
+                    </CollapsibleContent>
+                  </Collapsible>
+
               <SheetContent className="bg-[#1B1B1B]">
                 <div className="flex flex-col gap-4 mt-8">
                   {navItems.map((item) => (

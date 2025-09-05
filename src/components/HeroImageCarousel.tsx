@@ -56,7 +56,7 @@ const HeroImageCarousel = () => {
       
       <div className="relative perspective-1000">
         {/* <div className="glass rounded-2xl overflow-hidden relative group shadow-2xl shadow-primary/20 hover:shadow-primary/30 transition-all duration-500"> */}
-  <div className="glass rounded-none md:rounded-2xl overflow-hidden relative group shadow-2xl transition-all duration-500">
+  <div className="glass overflow-hidden relative group shadow-2xl transition-all duration-500">
           {/* Main Image Container with 3D effect */}
           <div className="relative w-full h-[350px] overflow-hidden flex items-center justify-center bg-black/80">
             <AnimatePresence mode="wait">
@@ -83,7 +83,7 @@ const HeroImageCarousel = () => {
                 <img
                   src={images[currentIndex]}
                   alt={`CryptoTrade Dashboard ${currentIndex + 1}`}
-                  className="w-full h-full max-h-[480px] object-contain rounded-lg shadow-md bg-black/70"
+                  className="w-full h-full max-h-[480px] object-contain shadow-md bg-black/70"
                   style={{ objectFit: 'contain', width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,0.7)' }}
                 />
                 {/* Overlay gradient for depth */}
