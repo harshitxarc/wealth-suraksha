@@ -65,13 +65,13 @@ const Navigation = () => {
   ];
 
   const services = [
-    "Investment Services",
-    "Tax Services",
-    "Retirement Services",
-    "Insurance Services",
-    "Will / Trust Formation Services",
-    "Loan Services",
-    "Real Estate Services"
+    { name: "Investment Services", path: "/services/investment-services" },
+    { name: "Tax Services", path: "/services/tax-services" },
+    { name: "Retirement Services", path: "/services/retirement-services" },
+    { name: "Insurance Services", path: "/services/insurance-services" },
+    { name: "Will / Trust Formation Services", path: "/services/will-trust-services" },
+    { name: "Loan Services", path: "/services/loan-services" },
+    { name: "Real Estate Services", path: "/services/real-estate-services" }
   ];
 
   const navItems = [
@@ -132,13 +132,13 @@ const Navigation = () => {
                     {/* <div className="flex flex-col gap-1 p-3 w-56 bg-popover border border-border rounded-md shadow-lg"> */}
                     <div className="flex flex-col gap-1 p-3 w-48 bg-popover border border-border rounded-md shadow-lg">
                       {services.map((service) => (
-                        <a
-                          key={service}
-                          href="#"
+                        <Link
+                          key={service.name}
+                          to={service.path}
                           className="block px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
                         >
-                          {service}
-                        </a>
+                          {service.name}
+                        </Link>
                       ))}
                     </div>
                   </NavigationMenuContent>
@@ -205,17 +205,14 @@ const Navigation = () => {
                     </CollapsibleTrigger>
                     <CollapsibleContent className="mt-2 ml-4 space-y-2">
                       {services.map((service) => (
-                        <a
-                          key={service}
-                          href="#"
+                        <Link
+                          key={service.name}
+                          to={service.path}
                           className="block py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-                          onClick={(e) => {
-                            e.preventDefault();
-                            setIsMobileMenuOpen(false);
-                          }}
+                          onClick={() => setIsMobileMenuOpen(false)}
                         >
-                          {service}
-                        </a>
+                          {service.name}
+                        </Link>
                       ))}
                     </CollapsibleContent>
                   </Collapsible>
