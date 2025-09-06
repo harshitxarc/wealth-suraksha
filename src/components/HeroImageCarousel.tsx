@@ -59,10 +59,10 @@ const HeroImageCarousel = () => {
   <div className="glass overflow-hidden relative group shadow-2xl transition-all duration-500">
           {/* Main Image Container with 3D effect */}
           <div className="relative w-full h-[350px] overflow-hidden flex items-center justify-center bg-black/80">
-            <AnimatePresence mode="wait">
+            <AnimatePresence initial={false}>
               <motion.div
                 key={currentIndex}
-                className="relative w-full h-full"
+                className="absolute inset-0 w-full h-full"
                 initial={{ 
                   x: "100%",
                   opacity: 0
@@ -76,7 +76,7 @@ const HeroImageCarousel = () => {
                   opacity: 0
                 }}
                 transition={{ 
-                  duration: 0.8, 
+                  duration: 1, 
                   ease: [0.25, 0.46, 0.45, 0.94] 
                 }}
               >
@@ -93,35 +93,26 @@ const HeroImageCarousel = () => {
           </div>
 
           {/* Enhanced Navigation Arrows */}
-          <motion.div
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
+          <div className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 opacity-60 md:opacity-0 group-hover:opacity-100 transition-all duration-300">
             <Button
               variant="outline"
               size="icon"
-              className="bg-black/30 border-white/30 text-white hover:bg-primary/80 hover:border-primary/80 backdrop-blur-md shadow-lg hover:shadow-primary/50 transition-all duration-300"
+              className="bg-black/40 border-white/40 text-white hover:bg-white/20 hover:border-white/60 backdrop-blur-md shadow-lg hover:shadow-white/20 transition-all duration-300 h-8 w-8 md:h-10 md:w-10"
               onClick={goToPrevious}
             >
               <ChevronLeft className="h-5 w-5" />
             </Button>
-          </motion.div>
+          </div>
 
-          <motion.div
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
+          <div className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 opacity-60 md:opacity-0 group-hover:opacity-100 transition-all duration-300">
             <Button
               variant="outline"
               size="icon"
-              className="bg-black/30 border-white/30 text-white hover:bg-primary/80 hover:border-primary/80 backdrop-blur-md shadow-lg hover:shadow-primary/50 transition-all duration-300"
-              onClick={goToNext}
+              className="bg-black/40 border-white/40 text-white hover:bg-white/20 hover:border-white/60 backdrop-blur-md shadow-lg hover:shadow-white/20 transition-all duration-300 h-8 w-8 md:h-10 md:w-10"
             >
               <ChevronRight className="h-5 w-5" />
             </Button>
-          </motion.div>
+          </div>
 
           
         </div>
