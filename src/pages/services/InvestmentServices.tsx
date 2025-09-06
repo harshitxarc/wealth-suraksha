@@ -5,26 +5,27 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import investmentServicesImage from "@/assets/investment-services.jpg";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const InvestmentServices = () => {
   const services = [
     {
-      icon: <TrendingUp className="w-8 h-8 text-primary" />,
+  icon: <TrendingUp className="w-8 h-8 text-[#2e3060]" />,
       title: "Portfolio Management",
       description: "Professional portfolio management tailored to your financial goals and risk tolerance."
     },
     {
-      icon: <PieChart className="w-8 h-8 text-primary" />,
+  icon: <PieChart className="w-8 h-8 text-[#2e3060]" />,
       title: "Asset Allocation",
       description: "Strategic asset allocation across different investment classes for optimal returns."
     },
     {
-      icon: <Shield className="w-8 h-8 text-primary" />,
+  icon: <Shield className="w-8 h-8 text-[#2e3060]" />,
       title: "Risk Management",
       description: "Comprehensive risk assessment and management strategies to protect your investments."
     },
     {
-      icon: <Users className="w-8 h-8 text-primary" />,
+  icon: <Users className="w-8 h-8 text-[#2e3060]" />,
       title: "Investment Advisory",
       description: "Expert investment advice from our team of certified financial advisors."
     }
@@ -49,6 +50,7 @@ const InvestmentServices = () => {
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                   Investment Services
                 </h1>
+                <DecorativeDivider className="mb-6" />
                 <p className="text-xl text-muted-foreground mb-8">
                   Comprehensive investment solutions designed to help you build wealth and achieve your financial objectives through strategic planning and expert guidance.
                 </p>

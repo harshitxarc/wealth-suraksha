@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import willTrustServicesImage from "@/assets/will-trust-services.jpg";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const WillTrustServices = () => {
   const services = [
@@ -49,6 +50,7 @@ const WillTrustServices = () => {
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                   Will / Trust Formation Services
                 </h1>
+                <DecorativeDivider className="mb-6" />
                 <p className="text-xl text-muted-foreground mb-8">
                   Secure your legacy and protect your loved ones with professional will and trust formation services designed to ensure your wishes are honored.
                 </p>

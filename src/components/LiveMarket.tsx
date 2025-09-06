@@ -25,7 +25,10 @@ const LiveMarket = () => {
       <PopoverTrigger asChild>
         <Button
           size="icon"
-          className="fixed bottom-6 right-24 z-50 h-14 w-14 rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+          className="fixed bottom-6 right-24 z-50 h-14 w-14 rounded-full text-white shadow-lg hover:shadow-xl transition-all duration-300"
+          style={{ background: isOpen ? '#393b6e' : '#2e3060' }}
+          onMouseEnter={e => e.currentTarget.style.background = '#393b6e'}
+          onMouseLeave={e => e.currentTarget.style.background = isOpen ? '#393b6e' : '#2e3060'}
           aria-label="View live market data"
         >
           <BarChart3 className="h-7 w-7" />
@@ -39,7 +42,7 @@ const LiveMarket = () => {
       >
         <div className="space-y-4">
           <div className="flex items-center gap-2 pb-3 border-b">
-            <BarChart3 className="h-5 w-5 text-primary" />
+            <BarChart3 className="h-5 w-5 text-[#2e3060]" />
             <h3 className="font-semibold text-lg">Live Market Data</h3>
           </div>
           

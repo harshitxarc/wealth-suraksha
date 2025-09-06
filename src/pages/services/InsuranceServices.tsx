@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import insuranceServicesImage from "@/assets/insurance-services.jpg";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const InsuranceServices = () => {
   const services = [
@@ -49,6 +50,7 @@ const InsuranceServices = () => {
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                   Insurance Services
                 </h1>
+                <DecorativeDivider className="mb-6" />
                 <p className="text-xl text-muted-foreground mb-8">
                   Comprehensive insurance solutions to protect what matters most - your family, health, property, and financial future with tailored coverage options.
                 </p>

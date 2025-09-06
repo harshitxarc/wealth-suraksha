@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import retirementServicesImage from "@/assets/retirement-services.jpg";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const RetirementServices = () => {
   const services = [
@@ -49,6 +50,7 @@ const RetirementServices = () => {
                 <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                   Retirement Services
                 </h1>
+                <DecorativeDivider className="mb-6" />
                 <p className="text-xl text-muted-foreground mb-8">
                   Secure your future with our comprehensive retirement planning services designed to help you achieve financial independence and peace of mind.
                 </p>

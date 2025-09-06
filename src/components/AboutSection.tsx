@@ -64,7 +64,7 @@ const AboutSection = () => {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="p-6 glass rounded-xl"
               >
-                <feature.icon className="w-8 h-8 text-primary mb-4" />
+                <feature.icon className="w-8 h-8 text-[#2e3060] mb-4" />
                 <h3 className="text-lg font-medium mb-3">{feature.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {feature.description}
