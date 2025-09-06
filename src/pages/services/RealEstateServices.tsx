@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const RealEstateServices = () => {
   const services = [
@@ -46,6 +47,7 @@ const RealEstateServices = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
               Real Estate Services
             </h1>
+            <DecorativeDivider className="mb-6" />
             <p className="text-xl text-muted-foreground max-w-3xl">
               Comprehensive real estate solutions including investment opportunities, property management, and expert advisory services for all your real estate needs.
             </p>

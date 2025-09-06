@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const DebtStructure = () => {
   return (
@@ -20,6 +21,7 @@ const DebtStructure = () => {
           
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-bold mb-6 gradient-text">Debt Structure Products</h1>
+            <DecorativeDivider className="mb-6" />
             
             <div className="prose prose-lg max-w-none">
               <p className="text-lg text-muted-foreground mb-8">

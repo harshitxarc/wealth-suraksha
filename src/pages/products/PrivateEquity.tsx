@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const PrivateEquity = () => {
   const navigate = useNavigate();
@@ -23,6 +24,7 @@ const PrivateEquity = () => {
           
           <div className="max-w-4xl mx-auto">
             <h1 className="text-4xl font-bold mb-8 gradient-text">Private Equity</h1>
+            <DecorativeDivider className="mb-6" />
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="space-y-6">

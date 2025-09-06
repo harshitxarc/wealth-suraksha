@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const RetirementServices = () => {
   const services = [
@@ -46,6 +47,7 @@ const RetirementServices = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
               Retirement Services
             </h1>
+            <DecorativeDivider className="mb-6" />
             <p className="text-xl text-muted-foreground max-w-3xl">
               Secure your future with our comprehensive retirement planning services designed to help you achieve financial independence and peace of mind.
             </p>

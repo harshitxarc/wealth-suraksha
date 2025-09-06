@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const TaxServices = () => {
   const services = [
@@ -46,6 +47,7 @@ const TaxServices = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
               Tax Services
             </h1>
+            <DecorativeDivider className="mb-6" />
             <p className="text-xl text-muted-foreground max-w-3xl">
               Comprehensive tax solutions to help you navigate complex tax laws, minimize liabilities, and maximize your financial efficiency with professional expertise.
             </p>
