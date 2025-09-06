@@ -109,6 +109,7 @@ const Navigation = () => {
               key="Home"
               to="/"
               className={`text-sm transition-all duration-300 ${location.pathname === "/" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Home
             </Link>
@@ -128,6 +129,7 @@ const Navigation = () => {
                           key={service.name}
                           to={service.path}
                           className="block px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
+                          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         >
                           {service.name}
                         </Link>
@@ -146,6 +148,7 @@ const Navigation = () => {
                           key={product.name}
                           to={product.path}
                           className="block px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
+                          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                         >
                           {product.name}
                         </Link>
@@ -160,6 +163,7 @@ const Navigation = () => {
               key="Blog"
               to="/blog"
               className={`text-sm transition-all duration-300 ${location.pathname === "/blog" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Blog
             </Link>
@@ -168,6 +172,7 @@ const Navigation = () => {
               key="Terms"
               to="/terms"
               className={`text-sm transition-all duration-300 ${location.pathname === "/terms" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Terms
             </Link>
@@ -175,6 +180,7 @@ const Navigation = () => {
               <Button 
                 size="sm"
                 className="button-gradient"
+                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               >
                 Contact Us
               </Button>
@@ -196,7 +202,7 @@ const Navigation = () => {
                     key="Home"
                     to="/"
                     className={`text-lg transition-colors ${location.pathname === "/" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                   >
                     Home
                   </Link>
@@ -212,7 +218,7 @@ const Navigation = () => {
                           key={service.name}
                           to={service.path}
                           className="block py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-                          onClick={() => setIsMobileMenuOpen(false)}
+                          onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                         >
                           {service.name}
                         </Link>
@@ -231,7 +237,7 @@ const Navigation = () => {
                           key={product.name}
                           to={product.path}
                           className="block py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-                          onClick={() => setIsMobileMenuOpen(false)}
+                          onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                         >
                           {product.name}
                         </Link>
@@ -243,7 +249,7 @@ const Navigation = () => {
                     key="Blog"
                     to="/blog"
                     className={`text-lg transition-colors ${location.pathname === "/blog" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                   >
                     Blog
                   </Link>
@@ -252,13 +258,13 @@ const Navigation = () => {
                     key="Terms"
                     to="/terms"
                     className={`text-lg transition-colors ${location.pathname === "/terms" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                   >
                     Terms
                   </Link>
                   <Link to="/contact">
                     <Button 
-                      onClick={() => setIsMobileMenuOpen(false)}
+                      onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                       className="button-gradient mt-4"
                     >
                       Contact Us

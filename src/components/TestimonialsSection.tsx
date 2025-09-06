@@ -56,7 +56,7 @@ const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl font-normal mb-4">Trusted by Clients</h2>
-          <DecorativeDivider className="mb-6" />
+          <DecorativeDivider className="mb-6 justify-center" />
           <p className="text-muted-foreground text-lg">
             Join thousands of satisfied clients on Wealth Suraksha
           </p>
