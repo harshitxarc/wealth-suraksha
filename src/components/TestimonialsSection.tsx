@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Card } from "./ui/card";
+import { DecorativeDivider } from "./ui/decorative-divider";
 
 const testimonials = [
   {
@@ -55,6 +56,7 @@ const TestimonialsSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl font-normal mb-4">Trusted by Clients</h2>
+          <DecorativeDivider className="mb-6" />
           <p className="text-muted-foreground text-lg">
             Join thousands of satisfied clients on Wealth Suraksha
           </p>

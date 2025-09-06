@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Shield, Zap, Globe, Users } from "lucide-react";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const AboutSection = () => {
   const features = [
@@ -38,6 +39,7 @@ const AboutSection = () => {
             <h2 className="text-4xl md:text-5xl font-normal mb-6">
               About Wealth Suraksha
             </h2>
+            <DecorativeDivider className="mb-6" />
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               At Wealth Suraksha LLP, we believe true wealth is not just about accumulating assets—it’s about creating a legacy that lasts. With the right vision, expert guidance, and a client-focused approach, we help you grow, protect, and pass on your wealth with confidence.
             </p>
