@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { DecorativeDivider } from "@/components/ui/decorative-divider";
+import retirementServicesImage from "@/assets/retirement-services.jpg";
 
 const RetirementServices = () => {
   const services = [
@@ -44,13 +44,24 @@ const RetirementServices = () => {
               </Button>
             </Link>
             
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Retirement Services
-            </h1>
-            <DecorativeDivider className="mb-6" />
-            <p className="text-xl text-muted-foreground max-w-3xl">
-              Secure your future with our comprehensive retirement planning services designed to help you achieve financial independence and peace of mind.
-            </p>
+            <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
+              <div>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+                  Retirement Services
+                </h1>
+                <p className="text-xl text-muted-foreground mb-8">
+                  Secure your future with our comprehensive retirement planning services designed to help you achieve financial independence and peace of mind.
+                </p>
+              </div>
+              <div className="relative rounded-xl overflow-hidden">
+                <img 
+                  src={retirementServicesImage} 
+                  alt="Professional retirement services consultation" 
+                  className="w-full h-48 md:h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
+              </div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">
