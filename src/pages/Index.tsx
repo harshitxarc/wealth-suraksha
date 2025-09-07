@@ -10,7 +10,9 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import StatsSection from "@/components/StatsSection";
 import LiveTicker from "@/components/LiveTicker";
 import AboutSection from "@/components/AboutSection";
-import SecuritySection from "@/components/SecuritySection";
+import WealthSuraksha from "@/components/WealthSuraksha";
+// import SecuritySection from "@/components/SecuritySection";
+import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import FAQSection from "@/components/FAQSection";
 import NewsletterSection from "@/components/NewsletterSection";
 import PartnersSection from "@/components/PartnersSection";
@@ -115,6 +117,9 @@ const Index = () => {
         <AboutSection />
       </div>
 
+      {/* Wealth Suraksha Services */}
+      <WealthSuraksha />
+
       {/* Logo Carousel */}
       <div className="bg-black">
         <LogoCarousel />
@@ -140,10 +145,15 @@ const Index = () => {
         <FeaturesSection />
       </div> */}
 
-      {/* Security Section */}
+      {/* Why Choose Us Section */}
+      <div className="bg-background">
+        <WhyChooseUsSection />
+      </div>
+
+      {/* Security Section
       <div className="bg-black">
         <SecuritySection />
-      </div>
+      </div> */}
 
       {/* Pricing Section */}
       <div id="pricing" className="bg-black">
