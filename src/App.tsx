@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import ScrollToTop from "@/components/ScrollToTop";
 import Index from "./pages/Index";
+import About from "./pages/About";
 import Services from "./pages/Services";
 import Products from "./pages/Products";
 import Blog from "./pages/Blog";
@@ -55,6 +56,7 @@ function AppWithRedirect() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
               <Route path="/services/investment-services" element={<InvestmentServices />} />
               <Route path="/services/tax-services" element={<TaxServices />} />

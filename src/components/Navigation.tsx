@@ -76,6 +76,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Home", href: "/", type: "link" },
+    { name: "About Us", href: "/about", type: "link" },
     { name: "Blog", href: "/blog", type: "link" },
     { name: "Terms", href: "/terms", type: "link" }
   ];
@@ -112,6 +113,15 @@ const Navigation = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Home
+            </Link>
+            {/* About Us link */}
+            <Link
+              key="About Us"
+              to="/about"
+              className={`text-sm transition-all duration-300 ${location.pathname === "/about" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+              About Us
             </Link>
             {/* Services link removed, dropdown remains */}
             {/* Our Products, Services dropdown */}
@@ -205,6 +215,15 @@ const Navigation = () => {
                     onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                   >
                     Home
+                  </Link>
+                  {/* About Us link */}
+                  <Link
+                    key="About Us"
+                    to="/about"
+                    className={`text-lg transition-colors ${location.pathname === "/about" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+                    onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                  >
+                    About Us
                   </Link>
                   {/* Services Dropdown remains */}
                   <Collapsible>

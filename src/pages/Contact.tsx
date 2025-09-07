@@ -46,13 +46,13 @@ const Contact = () => {
     //   city: "New York",
     //   address: "456 Wall Street, New York, NY 10005",
     //   phone: "+1 (555) 987-6543",
-    //   email: "ny@cryptotrade.com"
+    //   email: "ny@Wealth Suraksha.com"
     // },
     // {
     //   city: "London",
     //   address: "789 Financial District, London EC2V 8RS, UK",
     //   phone: "+44 20 7946 0958",
-    //   email: "london@cryptotrade.com"
+    //   email: "london@Wealth Suraksha.com"
     // }
   ];
 

@@ -82,7 +82,7 @@ const HeroImageCarousel = () => {
               >
                 <img
                   src={images[currentIndex]}
-                  alt={`CryptoTrade Dashboard ${currentIndex + 1}`}
+                  alt={`Wealth Suraksha Dashboard ${currentIndex + 1}`}
                   className="w-full h-full max-h-[480px] object-contain shadow-md bg-black/70"
                   style={{ objectFit: 'contain', width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,0.7)' }}
                 />

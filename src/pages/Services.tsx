@@ -119,7 +119,7 @@ const Services = () => {
             Ready to Secure Your Financial Future?
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Join thousands of traders who trust CryptoTrade for their cryptocurrency needs
+            Join thousands of traders who trust Wealth Suraksha for their cryptocurrency needs
           </p>
           <button className="button-gradient px-8 py-3 rounded-lg font-medium">
             Get Started Today

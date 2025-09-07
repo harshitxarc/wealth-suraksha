@@ -7,7 +7,7 @@ const Products = () => {
   const products = [
     {
       icon: <Monitor className="w-12 h-12" />,
-      title: "CryptoTrade Pro",
+      title: "Wealth Suraksha Pro",
       subtitle: "Desktop investing Platform",
       description: "Advanced desktop application with professional investing tools, real-time charts, and portfolio management.",
       features: [
@@ -22,7 +22,7 @@ const Products = () => {
     },
     {
       icon: <Smartphone className="w-12 h-12" />,
-      title: "CryptoTrade Mobile",
+      title: "Wealth Suraksha Mobile",
       subtitle: "iOS & Android App",
       description: "Trade on the go with our feature-rich mobile application available for iOS and Android devices.",
       features: [
@@ -37,7 +37,7 @@ const Products = () => {
     },
     {
       icon: <Code className="w-12 h-12" />,
-      title: "CryptoTrade API",
+      title: "Wealth Suraksha API",
       subtitle: "Developer Platform",
       description: "Integrate cryptocurrency investing into your applications with our robust REST and WebSocket APIs.",
       features: [
