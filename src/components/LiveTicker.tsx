@@ -93,9 +93,9 @@ const LiveTicker: React.FC = () => {
       <div className="container mx-auto px-0">
         <div className="flex items-center gap-2 mb-1">
           <span className="text-base font-semibold">
-            <span className="text-red-500">Live</span> <span className="text-gradient">Ticker</span>
+            <span className="text-red-500">Live</span>
           </span>
-          <span className="h-2 w-2 rounded-full bg-green-400 animate-pulse"></span>
+          <span className="h-2 w-2 rounded-full bg-red-500 animate-pulse"></span>
         </div>
         <div className="flex whitespace-nowrap animate-scroll gap-2 px-0 scrollbar-thin">
           {loading

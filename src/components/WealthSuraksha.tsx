@@ -5,37 +5,37 @@ const services = [
   {
     title: "Investment Services",
     description: "To invest is to allocate money in the expectation of some benefit in the future. In finance, the benefit from an investment is called a return.",
-    iconImage: "/lovable-uploads/3e896768-5a38-4bc1-8f40-1dcc6c46303d.png",
+    iconImage: "/img-uploads/Investment-icon.png",
     onClick: () => console.log("Investment Services clicked")
   },
   {
     title: "Tax Services", 
     description: "A tax is a compulsory financial charge or some other type of levy imposed on a taxpayer (an individual or legal entity) by a governmental organization",
-    iconImage: "/lovable-uploads/0bf27f3c-ee65-4ca5-88c3-d2c34b10be25.png",
+    iconImage: "/img-uploads/tax-icon.jpg",
     onClick: () => console.log("Tax Services clicked")
   },
   {
     title: "Insurance Services",
     description: "Insurance is a means of protection from financial loss. It is a form of risk management, primarily used to hedge against the risk of a contingent or uncertain loss.",
-    iconImage: "/lovable-uploads/b16b104e-e0f7-48ca-a8a1-dffc5ece1bee.png",
+    iconImage: "/img-uploads/Insurance-icon.jpg",
     onClick: () => console.log("Insurance Services clicked")
   },
   {
     title: "Retirement Services",
     description: "Retirement is the withdrawal from one's position or occupation or from one's active working life. A person may also semi-retire by reducing work hours or workload.",
-    iconImage: "/lovable-uploads/c9dff7e1-e14b-4975-8edd-173ba5da5861.png",
+    iconImage: "/img-uploads/Retirement-icon.png",
     onClick: () => console.log("Retirement Services clicked")
   },
   {
     title: "Real Estate Services",
     description: "Real estate is the land along with any permanent improvements attached to the land, including water, trees, minerals, buildings, homes, fences, and bridges.",
-    iconImage: "/lovable-uploads/b16b104e-e0f7-48ca-a8a1-dffc5ece1bee.png",
+    iconImage: "/img-uploads/Real-Estate-icon.png",
     onClick: () => console.log("Real Estate Services clicked")
   },
   {
     title: "Loan Services",
     description: "In finance, a loan is the lending of money by one or more individuals, organizations, or other entities to other individuals, organizations etc.",
-    iconImage: "/lovable-uploads/6cdb01f9-a545-45b6-9e99-d13687211dfe.png",
+    iconImage: "/img-uploads/loan-icon.png",
     onClick: () => console.log("Loan Services clicked")
   }
 ];
