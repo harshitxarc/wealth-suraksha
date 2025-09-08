@@ -10,22 +10,22 @@ import { DecorativeDivider } from "@/components/ui/decorative-divider";
 const InvestmentServices = () => {
   const services = [
     {
-  icon: <TrendingUp className="w-8 h-8 text-[#2e3060]" />,
+  icon: <TrendingUp className="w-8 h-8 text-primary" />,
       title: "Portfolio Management",
       description: "Professional portfolio management tailored to your financial goals and risk tolerance."
     },
     {
-  icon: <PieChart className="w-8 h-8 text-[#2e3060]" />,
+  icon: <PieChart className="w-8 h-8 text-primary" />,
       title: "Asset Allocation",
       description: "Strategic asset allocation across different investment classes for optimal returns."
     },
     {
-  icon: <Shield className="w-8 h-8 text-[#2e3060]" />,
+  icon: <Shield className="w-8 h-8 text-primary" />,
       title: "Risk Management",
       description: "Comprehensive risk assessment and management strategies to protect your investments."
     },
     {
-  icon: <Users className="w-8 h-8 text-[#2e3060]" />,
+  icon: <Users className="w-8 h-8 text-primary" />,
       title: "Investment Advisory",
       description: "Expert investment advice from our team of certified financial advisors."
     }
@@ -52,7 +52,7 @@ const InvestmentServices = () => {
                 </h1>
                 <DecorativeDivider className="mb-6" />
                 <p className="text-xl text-muted-foreground mb-8">
-                  Comprehensive investment solutions designed to help you build wealth and achieve your financial objectives through strategic planning and expert guidance.
+                  At Wealth Suraksha IMF LLP, we follow a comprehensive and disciplined approach to help you build, align, and manage your investment portfolio effectively.
                 </p>
               </div>
               <div className="relative rounded-xl overflow-hidden">
