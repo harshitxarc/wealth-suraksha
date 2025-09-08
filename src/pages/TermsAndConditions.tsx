@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const TermsAndConditions = () => {
   return (
@@ -11,7 +12,7 @@ const TermsAndConditions = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="container mx-auto px-4 py-24"
+        className="container mx-auto px-4 py-24 pt-32"
       >
         <div className="max-w-7xl mx-auto">
           {/* Hero Section */}
@@ -21,13 +22,13 @@ const TermsAndConditions = () => {
             transition={{ delay: 0.2 }}
             className="text-center mb-16"
           >
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3 }}
-              className="inline-block p-2 rounded-lg bg-primary/10 mb-6"
+              transition={{ delay: 0.2 }}
+              className="inline-block mb-6 px-6 py-2 rounded-full glass"
             >
-              <div className="text-primary text-sm font-medium px-3 py-1">Legal Document</div>
+              <span className="text-sm font-medium text-primary">Legal Document</span>
             </motion.div>
             <motion.h1 
               initial={{ opacity: 0, y: 20 }}
@@ -44,6 +45,7 @@ const TermsAndConditions = () => {
               className="text-xl text-muted-foreground max-w-2xl mx-auto"
             >
               Please read these terms carefully before using our services. Your use of our platform constitutes acceptance of these terms.
+              <DecorativeDivider className="mb-6 justify-center" />
             </motion.p>
           </motion.div>
 

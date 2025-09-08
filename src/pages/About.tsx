@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const About = () => {
   const navigate = useNavigate();
@@ -56,6 +57,7 @@ const About = () => {
               className="text-4xl md:text-6xl font-normal mb-6 tracking-tight"
             >
               About <span className="text-gradient">Wealth Suraksha</span>
+              <DecorativeDivider className="mb-6 justify-center" />
             </motion.h1>
           </div>
         </div>

@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Calendar, User, ArrowRight, TrendingUp } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const Blog = () => {
   const featuredPost = {
@@ -91,6 +92,7 @@ const Blog = () => {
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
             How to Build Wealth Safely: A Beginner’s Guide to Long-Term Investing
           </p>
+          <DecorativeDivider className="mb-6 justify-center" />
         </div>
       </motion.section>
 

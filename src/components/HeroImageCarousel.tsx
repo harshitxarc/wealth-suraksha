@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 const HeroImageCarousel = () => {
   const images = [
     "/img-uploads/quality.png",
-    "/img-uploads/destination.png",
+    // "/img-uploads/destination.png",
     "/img-uploads/freedom.png",
     "/img-uploads/create.png",
     "/img-uploads/quality.png",
