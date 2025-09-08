@@ -190,6 +190,8 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.2 }}
+                whileHover={{ scale: 1.06, zIndex: 2 }}
+                style={{ zIndex: 1 }}
               >
                 <Card className="h-full glass hover:bg-muted/20 transition-all duration-300">
                   <CardContent className="p-8 text-center">

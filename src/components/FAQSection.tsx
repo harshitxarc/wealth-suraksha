@@ -9,36 +9,36 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "How do I get started with Wealth Suraksha?",
-      answer: "Getting started is simple! Create your account, complete the verification process, deposit funds, and you're ready to trade. Our onboarding process typically takes less than 10 minutes."
+      question: "What kind of clients does Wealth Suraksha serve?",
+      answer: "We serve Resident and Non-Resident Indians (NRIs), SMEs, and Corporates with customized wealth management solutions."
     },
     {
-      question: "What cryptocurrencies can I trade?",
-      answer: "We support over 150 cryptocurrencies including Bitcoin, Ethereum, and all major altcoins. We regularly add new tokens based on market demand and our strict security criteria."
+      question: "What financial services do you provide?",
+      answer: "We offer Investment, Tax, Insurance, Retirement, Will/Trust, Loan, and Real Estate services under one roof."
     },
     {
-      question: "Is my money safe on Wealth Suraksha?",
-      answer: "Absolutely. We use bank-grade security with 95% of funds stored in cold storage, multi-signature wallets, and comprehensive insurance coverage. Your security is our top priority."
+      question: "What types of investment products are available?",
+      answer: "Our portfolio includes mutual funds, PMS, private equity, AIFs, real estate, insurance, bonds, and retirement schemes."
     },
     {
-      question: "What are your investing fees?",
-      answer: "Our fees are competitive and transparent. Standard investing fees start at 0.1% and decrease with higher investing volumes. We offer three pricing tiers with additional benefits for higher-volume traders."
+      question: "What is Portfolio Management Service (PMS)?",
+      answer: "PMS is a personalized, professionally managed portfolio service ideal for high-net-worth clients seeking tailored strategies."
     },
     {
-      question: "How long do withdrawals take?",
-      answer: "Cryptocurrency withdrawals typically process within 15 minutes. Bank transfers usually take 1-3 business days depending on your location and payment method."
+      question: "What tax-related services do you offer?",
+      answer: "We help with PAN applications, tax planning, ITR filing, salary restructuring, and responding to income-tax notices."
     },
     {
-      question: "Do you offer customer support?",
-      answer: "Yes! We provide 24/7 customer support through live chat, email, and phone. Our support team consists of crypto experts ready to help with any questions or issues."
+      question: "What is included in Will and Trust Formation services?",
+      answer: "We draft and register wills or trusts through expert attorneys to ensure smooth and secure estate planning."
     },
     {
-      question: "Can I use Wealth Suraksha on mobile?",
-      answer: "Absolutely! Our platform is fully responsive and works seamlessly on all devices. We also offer dedicated mobile apps for iOS and Android with all the features of our web platform."
+      question: "How does Wealth Suraksha simplify investment management?",
+      answer: "Clients get consolidated reports, capital gains statements, online transactions, calculators, and timely reminders."
     },
     {
-      question: "Is Wealth Suraksha regulated?",
-      answer: "Yes, we operate under strict regulatory compliance in multiple jurisdictions. We hold licenses and registrations where required and follow all applicable financial regulations."
+      question: "Who are the founders of Wealth Suraksha?",
+      answer: "Gaurav Verma and Nidhi Jindal, both with decades of finance experience, lead the firm with expertise and trust."
     }
   ];
 
