@@ -34,7 +34,7 @@ const TermsAndConditions = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent mb-6"
+              className="text-6xl md:text-7xl font-light mb-8 tracking-tight"
             >
               Terms & Conditions
             </motion.h1>

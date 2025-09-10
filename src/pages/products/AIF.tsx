@@ -2,6 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
+import { Link } from "react-router-dom";
 import Footer from "@/components/Footer";
 import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
@@ -13,17 +14,15 @@ const AIF = () => {
       <Navigation />
       <main className="pt-32 pb-16">
         <div className="container mx-auto px-6">
-          <Button
-            onClick={() => navigate(-1)}
-            variant="ghost"
-            className="mb-8 flex items-center gap-2"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back
-          </Button>
+          <Link to="/">
+            <Button variant="outline" size="sm" className="mb-8">
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Home
+            </Button>
+          </Link>
           
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-8 gradient-text">Alternate Investment Fund (AIF)</h1>
+            <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight">Alternate Investment Fund (AIF)</h1>
             <DecorativeDivider className="mb-6" />
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">

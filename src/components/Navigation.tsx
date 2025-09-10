@@ -134,16 +134,19 @@ const Navigation = () => {
                   <NavigationMenuContent>
                     {/* <div className="flex flex-col gap-1 p-3 w-56 bg-popover border border-border rounded-md shadow-lg"> */}
                     <div className="flex flex-col gap-1 p-3 w-48 bg-popover border border-border rounded-md shadow-lg">
-                      {services.map((service) => (
-                        <Link
-                          key={service.name}
-                          to={service.path}
-                          className="block px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
-                          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        >
-                          {service.name}
-                        </Link>
-                      ))}
+                      {services.map((service) => {
+                        const isActive = location.pathname.toLowerCase() === service.path.toLowerCase();
+                        return (
+                          <Link
+                            key={service.name}
+                            to={service.path}
+                            className={`block px-3 py-2 text-sm rounded-md transition-colors ${isActive ? "bg-primary/10 text-primary font-semibold" : "text-muted-foreground hover:text-foreground hover:bg-accent"}`}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                          >
+                            {service.name}
+                          </Link>
+                        );
+                      })}
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -153,16 +156,19 @@ const Navigation = () => {
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="flex flex-col gap-1 p-3 w-56 bg-popover border border-border rounded-md shadow-lg">
-                      {products.map((product) => (
-                        <Link
-                          key={product.name}
-                          to={product.path}
-                          className="block px-3 py-2 text-sm text-muted-foreground hover:text-foreground hover:bg-accent rounded-md transition-colors"
-                          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                        >
-                          {product.name}
-                        </Link>
-                      ))}
+                      {products.map((product) => {
+                        const isActive = location.pathname.toLowerCase() === product.path.toLowerCase();
+                        return (
+                          <Link
+                            key={product.name}
+                            to={product.path}
+                            className={`block px-3 py-2 text-sm rounded-md transition-colors ${isActive ? "bg-primary/10 text-primary font-semibold" : "text-muted-foreground hover:text-foreground hover:bg-accent"}`}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                          >
+                            {product.name}
+                          </Link>
+                        );
+                      })}
                     </div>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -232,16 +238,19 @@ const Navigation = () => {
                       <ChevronDown className="h-4 w-4" />
                     </CollapsibleTrigger>
                     <CollapsibleContent className="mt-2 ml-4 space-y-2">
-                      {services.map((service) => (
-                        <Link
-                          key={service.name}
-                          to={service.path}
-                          className="block py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-                          onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                        >
-                          {service.name}
-                        </Link>
-                      ))}
+                      {services.map((service) => {
+                        const isActive = location.pathname.toLowerCase() === service.path.toLowerCase();
+                        return (
+                          <Link
+                            key={service.name}
+                            to={service.path}
+                            className={`block py-2 text-sm rounded-md transition-colors ${isActive ? "bg-primary/10 text-primary font-semibold" : "text-muted-foreground hover:text-foreground"}`}
+                            onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                          >
+                            {service.name}
+                          </Link>
+                        );
+                      })}
                     </CollapsibleContent>
                   </Collapsible>
                   {/* Our Products Dropdown */}
@@ -251,16 +260,19 @@ const Navigation = () => {
                       <ChevronDown className="h-4 w-4" />
                     </CollapsibleTrigger>
                     <CollapsibleContent className="mt-2 ml-4 space-y-2">
-                      {products.map((product) => (
-                        <Link
-                          key={product.name}
-                          to={product.path}
-                          className="block py-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-                          onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                        >
-                          {product.name}
-                        </Link>
-                      ))}
+                      {products.map((product) => {
+                        const isActive = location.pathname.toLowerCase() === product.path.toLowerCase();
+                        return (
+                          <Link
+                            key={product.name}
+                            to={product.path}
+                            className={`block py-2 text-sm rounded-md transition-colors ${isActive ? "bg-primary/10 text-primary font-semibold" : "text-muted-foreground hover:text-foreground"}`}
+                            onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                          >
+                            {product.name}
+                          </Link>
+                        );
+                      })}
                     </CollapsibleContent>
                   </Collapsible>
                   {/* Blog link */}

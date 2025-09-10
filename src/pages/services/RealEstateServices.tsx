@@ -11,23 +11,23 @@ const RealEstateServices = () => {
   const services = [
     {
       icon: <Building className="w-8 h-8 text-primary" />,
-      title: "Property Investment",
-      description: "Strategic real estate investment opportunities for portfolio diversification."
+      title: "Primary Market Transactions",
+      description: "Buying and selling of new residential and commercial projects."
     },
     {
       icon: <MapPin className="w-8 h-8 text-primary" />,
-      title: "Property Management",
-      description: "Professional property management services to maximize your rental income."
+      title: "Property Structuring & Advisory",
+      description: "Designing and structuring property investments to optimize returns and legal compliance."
     },
     {
       icon: <TrendingUp className="w-8 h-8 text-primary" />,
-      title: "Market Analysis",
-      description: "Comprehensive market analysis and property valuation services."
+      title: "Secondary Market Transactions",
+      description: "Facilitating purchase and sale of pre-owned residential and commercial properties."
     },
     {
       icon: <Key className="w-8 h-8 text-primary" />,
-      title: "Real Estate Advisory",
-      description: "Expert advisory services for buying, selling, and investing in real estate."
+      title: "Pre-Leased Commercial Rentals",
+      description: "Assistance in acquiring or leasing commercial properties with pre-existing tenants."
     }
   ];
 
@@ -47,7 +47,7 @@ const RealEstateServices = () => {
             
             <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
               <div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+                <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                   Real Estate Services
                 </h1>
                 <DecorativeDivider className="mb-6" />

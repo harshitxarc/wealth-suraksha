@@ -47,7 +47,7 @@ const WillTrustServices = () => {
             
             <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
               <div>
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+                <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
                   Will / Trust Formation Services
                 </h1>
                 <DecorativeDivider className="mb-6" />

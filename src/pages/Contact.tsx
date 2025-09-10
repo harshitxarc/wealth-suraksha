@@ -184,7 +184,7 @@ const Contact = () => {
           >
             <h2 className="text-2xl font-bold mb-6">Our Office</h2>
             {offices.map((office, index) => (
-              <div key={index} className="glass rounded-xl p-6">
+              <div key={index} className="glass rounded-xl p-6 mb-8">
                 <h3 className="text-xl font-semibold mb-4">{office.city}</h3>
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
@@ -202,6 +202,21 @@ const Contact = () => {
                 </div>
               </div>
             ))}
+
+            {/* Google Maps Embed */}
+            <div className="glass rounded-xl overflow-hidden border border-primary/20 shadow-lg">
+              <iframe
+                title="Wealth Suraksha Office Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14034.96496423213!2d77.136676!3d28.515909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d23a17cdcca77%3A0x8d130935ddaef565!2sWealth%20Suraksha%20IMF%20LLP!5e0!3m2!1sen!2sin!4v1694092800000!5m2!1sen!2sin"
+                width="100%"
+                height="320"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="w-full h-80 min-h-[320px]"
+              ></iframe>
+            </div>
           </motion.div>
         </div>
       </section>

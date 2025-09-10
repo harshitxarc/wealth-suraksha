@@ -20,7 +20,7 @@ const Debentures = () => {
           </Link>
           
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-6 gradient-text">Debentures</h1>
+            <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight">Debentures</h1>
             <DecorativeDivider className="mb-6" />
             
             <div className="prose prose-lg max-w-none">

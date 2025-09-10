@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { DecorativeDivider } from "@/components/ui/decorative-divider";
+import LeadershipSection from "@/components/LeadershipSection";
 
 const About = () => {
   const navigate = useNavigate();
@@ -54,7 +55,7 @@ const About = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="text-4xl md:text-6xl font-normal mb-6 tracking-tight"
+              className="text-6xl md:text-7xl font-light mb-8 tracking-tight"
             >
               About <span className="text-gradient">Wealth Suraksha</span>
               <DecorativeDivider className="mb-6 justify-center" />
@@ -212,6 +213,11 @@ const About = () => {
         </div>
       </section>
 
+      {/* Leadership Section */}
+      <div className="bg-black">
+        <LeadershipSection />
+      </div>
+
       {/* CTA Section */}
       <motion.section
         initial={{ opacity: 0, y: 30 }}
@@ -237,6 +243,11 @@ const About = () => {
           </Button>
         </div>
       </motion.section>
+
+      {/* Leadership Section
+      <div className="bg-black">
+        <LeadershipSection />
+      </div> */}
 
       <Footer />
     </div>
