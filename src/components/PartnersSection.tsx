@@ -150,7 +150,7 @@ const PartnersSection = () => {
               className="group relative"
             >
               {/* Card Container */}
-              <div className="relative bg-white p-3 shadow-sm border border-gray-100 hover:shadow-md hover:border-primary/20 transition-all duration-300 aspect-square flex items-center justify-center overflow-hidden" style={{ clipPath: 'polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%)' }}>
+              <div className="relative bg-foreground p-3 shadow-sm border border-gray-100 hover:shadow-md hover:border-primary/20 transition-all duration-300 aspect-square flex items-center justify-center overflow-hidden" style={{ clipPath: 'polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%)' }}>
                 {/* Background Gradient on Hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" style={{ clipPath: 'polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%)' }} />
                 
@@ -163,7 +163,7 @@ const PartnersSection = () => {
                 
                 {/* Company Name on Hover */}
                 <div className="absolute inset-0 flex items-center justify-center p-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  <span className="text-xs font-semibold text-black text-center leading-tight">
+                  <span className="text-xs font-semibold text-background text-center leading-tight">
                     {partner.name}
                   </span>
                 </div>

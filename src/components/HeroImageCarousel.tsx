@@ -83,11 +83,11 @@ const HeroImageCarousel = () => {
                 <img
                   src={images[currentIndex]}
                   alt={`Wealth Suraksha Dashboard ${currentIndex + 1}`}
-                  className="w-full h-full max-h-[480px] object-contain shadow-md bg-black/70"
+                  className="w-full h-full max-h-[480px] object-contain shadow-md bg-background/10"
                   style={{ objectFit: 'contain', width: '100%', height: '100%', backgroundColor: 'rgba(0,0,0,0.7)' }}
                 />
                 {/* Overlay gradient for depth */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-60" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/20 via-transparent to-transparent opacity-60" />
               </motion.div>
             </AnimatePresence>
           </div>
@@ -97,7 +97,7 @@ const HeroImageCarousel = () => {
             <Button
               variant="outline"
               size="icon"
-              className="bg-black/40 border-white/40 text-white hover:bg-white/20 hover:border-white/60 backdrop-blur-md shadow-lg hover:shadow-white/20 transition-all duration-300 h-8 w-8 md:h-10 md:w-10"
+              className="bg-background/40 border-foreground/40 text-foreground hover:bg-foreground/20 hover:border-foreground/60 backdrop-blur-md shadow-lg hover:shadow-foreground/20 transition-all duration-300 h-8 w-8 md:h-10 md:w-10"
               onClick={goToPrevious}
             >
               <ChevronLeft className="h-5 w-5" />
@@ -108,7 +108,7 @@ const HeroImageCarousel = () => {
             <Button
               variant="outline"
               size="icon"
-              className="bg-black/40 border-white/40 text-white hover:bg-white/20 hover:border-white/60 backdrop-blur-md shadow-lg hover:shadow-white/20 transition-all duration-300 h-8 w-8 md:h-10 md:w-10"
+              className="bg-background/40 border-foreground/40 text-foreground hover:bg-foreground/20 hover:border-foreground/60 backdrop-blur-md shadow-lg hover:shadow-foreground/20 transition-all duration-300 h-8 w-8 md:h-10 md:w-10"
             >
               <ChevronRight className="h-5 w-5" />
             </Button>

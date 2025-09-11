@@ -75,7 +75,7 @@ const Blog = () => {
   const categories = ["All", "Market Analysis", "Technology", "Education", "DeFi", "investing", "Regulation", "Strategy"];
 
   return (
-    <div className="min-h-screen bg-black text-foreground">
+    <div className="min-h-screen bg-background text-foreground">
       <Navigation />
       
       {/* Hero Section */}
@@ -86,8 +86,8 @@ const Blog = () => {
         className="relative container px-4 pt-40 pb-20"
       >
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Investment & Wealth <span className="text-primary">Blog</span>
+          <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight">
+            Investment & Wealth <span className="text-gradient">Blog</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
             How to Build Wealth Safely: A Beginner’s Guide to Long-Term Investing
@@ -189,7 +189,7 @@ const Blog = () => {
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 text-xs font-medium bg-black/80 text-white rounded-full">
+                  <span className="px-3 py-1 text-xs font-medium bg-background/80 text-foreground rounded-full">
                     {post.category}
                   </span>
                 </div>
@@ -244,7 +244,7 @@ const Blog = () => {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg bg-black/50 border border-white/10 focus:border-primary/50 focus:outline-none"
+              className="flex-1 px-4 py-3 rounded-lg bg-background/50 border border-foreground/10 focus:border-primary/50 focus:outline-none"
             />
             <button className="button-gradient px-6 py-3 rounded-lg font-medium">
               Subscribe

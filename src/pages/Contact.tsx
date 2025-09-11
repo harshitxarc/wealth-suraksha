@@ -57,7 +57,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-foreground">
+    <div className="min-h-screen bg-background text-foreground">
       <Navigation />
       
       {/* Hero Section */}
@@ -68,7 +68,7 @@ const Contact = () => {
         className="relative container px-4 pt-40 pb-20"
       >
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
+          <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight">
             Get in <span className="text-primary">Touch</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
@@ -120,7 +120,7 @@ const Contact = () => {
                   <label className="block text-sm font-medium mb-2">First Name*</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/10 focus:border-primary/50 focus:outline-none"
+                    className="w-full px-4 py-3 rounded-lg bg-background border border-white/10 focus:border-primary/50 focus:outline-none"
                     placeholder="John"
                   />
                 </div>
@@ -128,7 +128,7 @@ const Contact = () => {
                   <label className="block text-sm font-medium mb-2">Last Name</label>
                   <input
                     type="text"
-                    className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/10 focus:border-primary/50 focus:outline-none"
+                    className="w-full px-4 py-3 rounded-lg bg-background border border-white/10 focus:border-primary/50 focus:outline-none"
                     placeholder="Doe"
                   />
                 </div>
@@ -138,14 +138,14 @@ const Contact = () => {
                 <label className="block text-sm font-medium mb-2">Email*</label>
                 <input
                   type="email"
-                  className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/10 focus:border-primary/50 focus:outline-none"
+                  className="w-full px-4 py-3 rounded-lg bg-background border border-white/10 focus:border-primary/50 focus:outline-none"
                   placeholder="john@example.com"
                 />
               </div>
               
               <div>
                 <label className="block text-sm font-medium mb-2">Choose a service*</label>
-                <select className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/10 focus:border-primary/50 focus:outline-none">
+                <select className="w-full px-4 py-3 rounded-lg bg-background border border-white/10 focus:border-primary/50 focus:outline-none">
                   <option>Investment</option>
                   <option>Insurance</option>
                   <option>Tax Filing</option>
@@ -160,14 +160,14 @@ const Contact = () => {
                 <label className="block text-sm font-medium mb-2">Message</label>
                 <textarea
                   rows={5}
-                  className="w-full px-4 py-3 rounded-lg bg-black/50 border border-white/10 focus:border-primary/50 focus:outline-none resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-background border border-white/10 focus:border-primary/50 focus:outline-none resize-none"
                   placeholder="Tell us how we can help you..."
                 ></textarea>
               </div>
               
               <button
                 type="submit"
-                className="w-full button-gradient py-3 rounded-lg font-medium flex items-center justify-center gap-2"
+                className="w-full bg-primary text-white hover:bg-primary/90 py-3 rounded-full font-medium flex items-center justify-center gap-2"
               >
                 Send Message
                 <Send className="w-4 h-4" />

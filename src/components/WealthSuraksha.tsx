@@ -44,7 +44,7 @@ const services = [
 const WealthSuraksha = () => {
   const navigate = useNavigate();
   return (
-    <section className="container px-4 py-24 bg-black">
+    <section className="container px-4 py-24 bg-background">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -72,7 +72,7 @@ const WealthSuraksha = () => {
             transition={{ delay: index * 0.1, duration: 0.5 }}
           >
             <Card 
-              className="h-full bg-black/40 backdrop-blur-xl border-white/10 hover:border-white/20 transition-all duration-300 group cursor-pointer hover:scale-105 transform"
+              className="h-full bg-background/40 backdrop-blur-xl border-foreground/10 hover:border-foreground/20 transition-all duration-300 group cursor-pointer hover:scale-105 transform"
               onClick={() => navigate(service.path)}
             >
               <CardContent className="p-8">

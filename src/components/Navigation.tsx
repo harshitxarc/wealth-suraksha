@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Command, Menu, ChevronDown} from "lucide-react";
 import { Button } from "./ui/button";
+import { ThemeToggle } from "./ThemeToggle";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { 
   NavigationMenu,
@@ -97,19 +98,19 @@ const Navigation = () => {
         <nav className="flex items-center justify-between h-full">
           <Link to="/" className="flex items-center gap-3">
             {/* <Command className="w-5 h-5 text-primary" /> */}
-            <img src="/img-uploads/ws-logo.png" alt="Wealth Suraksha Logo" className="w-20 h-20 mr-4 rounded-full object-contain shadow align-middle" />
+            <img src="/img-uploads/ws-logo.png" alt="Wealth Suraksha Logo" className="w-20 h-20 mr-4 rounded-full object-contain align-middle" />
             <span className="font-bold text-2xl">
-              Wealth<span style={{ color: '#4ADE80' }}>Suraksha</span>
+              Wealth<span className="bg-gradient-to-r from-primary to-green-400 dark:from-green-300 dark:to-primary bg-clip-text text-transparent">Suraksha</span>
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-4">
             {/* Home link */}
             <Link
               key="Home"
               to="/"
-              className={`text-sm transition-all duration-300 ${location.pathname === "/" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+              className={`text-sm transition-all duration-300 ${location.pathname === "/" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Home
@@ -118,7 +119,7 @@ const Navigation = () => {
             <Link
               key="About Us"
               to="/about"
-              className={`text-sm transition-all duration-300 ${location.pathname === "/about" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+              className={`text-sm transition-all duration-300 ${location.pathname === "/about" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               About Us
@@ -178,7 +179,7 @@ const Navigation = () => {
             <Link
               key="Blog"
               to="/blog"
-              className={`text-sm transition-all duration-300 ${location.pathname === "/blog" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+              className={`text-sm transition-all duration-300 ${location.pathname === "/blog" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Blog
@@ -187,15 +188,16 @@ const Navigation = () => {
             <Link
               key="Terms"
               to="/terms"
-              className={`text-sm transition-all duration-300 ${location.pathname === "/terms" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+              className={`text-sm transition-all duration-300 ${location.pathname === "/terms" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Terms
             </Link>
+            <ThemeToggle />
             <Link to="/contact">
               <Button 
                 size="sm"
-                className="button-gradient"
+                className="bg-primary text-white hover:bg-primary/90 rounded-full"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               >
                 Contact Us
@@ -204,20 +206,21 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
+            <ThemeToggle />
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="glass">
                   <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent className="bg-[#1B1B1B]">
+              <SheetContent className="bg-background border-border">
                 <div className="flex flex-col gap-4 mt-8">
                   {/* Home link */}
                   <Link
                     key="Home"
                     to="/"
-                    className={`text-lg transition-colors ${location.pathname === "/" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+                    className={`text-lg transition-colors ${location.pathname === "/" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
                     onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                   >
                     Home
@@ -226,7 +229,7 @@ const Navigation = () => {
                   <Link
                     key="About Us"
                     to="/about"
-                    className={`text-lg transition-colors ${location.pathname === "/about" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+                    className={`text-lg transition-colors ${location.pathname === "/about" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
                     onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                   >
                     About Us
@@ -279,7 +282,7 @@ const Navigation = () => {
                   <Link
                     key="Blog"
                     to="/blog"
-                    className={`text-lg transition-colors ${location.pathname === "/blog" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+                    className={`text-lg transition-colors ${location.pathname === "/blog" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
                     onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                   >
                     Blog
@@ -288,7 +291,7 @@ const Navigation = () => {
                   <Link
                     key="Terms"
                     to="/terms"
-                    className={`text-lg transition-colors ${location.pathname === "/terms" ? "text-white" : "text-muted-foreground hover:text-foreground"}`}
+                    className={`text-lg transition-colors ${location.pathname === "/terms" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
                     onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
                   >
                     Terms
@@ -296,7 +299,7 @@ const Navigation = () => {
                   <Link to="/contact">
                     <Button 
                       onClick={() => { setIsMobileMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                      className="button-gradient mt-4"
+                      className="bg-primary text-white hover:bg-primary/90 mt-4 rounded-full"
                     >
                       Contact Us
                     </Button>

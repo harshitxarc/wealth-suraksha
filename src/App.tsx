@@ -32,6 +32,7 @@ import InsuranceServices from "./pages/services/InsuranceServices";
 import WillTrustServices from "./pages/services/WillTrustServices";
 import LoanServices from "./pages/services/LoanServices";
 import RealEstateServices from "./pages/services/RealEstateServices";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import LiveMarket from "@/components/LiveMarket";
 
@@ -49,6 +50,7 @@ function AppWithRedirect() {
     // eslint-disable-next-line
   }, []);
   return (
+  <ThemeProvider defaultTheme="dark" storageKey="ui-theme">
     <TooltipProvider>
       <div className="min-h-screen bg-background">
         <Toaster />
@@ -86,6 +88,7 @@ function AppWithRedirect() {
         <WhatsAppFloat />
       </div>
     </TooltipProvider>
+  </ThemeProvider>  
   );
 }
 

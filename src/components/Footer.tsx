@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-16 mt-24 bg-[#101010] border-t border-white/10">
+    <footer className="w-full py-16 mt-24 bg-background border-t border-white/10">
       <div className="container px-4">
         <div className="glass glass-hover rounded-2xl p-10 md:p-14">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-16">
@@ -148,7 +148,7 @@ const Footer = () => {
                     </svg>
                   <div className="text-left">
                     <div className="text-xs font-medium">Wealth Suraksha Online</div>
-                    <div className="text-xs text-black">Need help? Chat via WhatsApp</div>
+                    <div className="text-xs text-background">Need help? Chat via WhatsApp</div>
                   </div>
                 </Button>
               </div>

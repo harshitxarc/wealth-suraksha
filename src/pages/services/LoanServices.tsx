@@ -61,7 +61,7 @@ const LoanServices = () => {
                   alt="Professional loan services consultation" 
                   className="w-full h-48 md:h-64 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
             </div>
           </div>

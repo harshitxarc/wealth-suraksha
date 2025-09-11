@@ -36,7 +36,7 @@ const TermsAndConditions = () => {
               transition={{ delay: 0.4 }}
               className="text-6xl md:text-7xl font-light mb-8 tracking-tight"
             >
-              Terms & Conditions
+              Terms & <span className="text-gradient">Conditions</span>
             </motion.h1>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
@@ -45,8 +45,8 @@ const TermsAndConditions = () => {
               className="text-xl text-muted-foreground max-w-2xl mx-auto"
             >
               Please read these terms carefully before using our services. Your use of our platform constitutes acceptance of these terms.
-              <DecorativeDivider className="mb-6 justify-center" />
             </motion.p>
+            <DecorativeDivider className="mb-6 justify-center" />
           </motion.div>
 
           {/* Content Container */}

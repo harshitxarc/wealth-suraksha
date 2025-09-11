@@ -37,7 +37,7 @@ const AboutSection = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h2 className="text-4xl md:text-5xl font-normal mb-6">
-              Wealth <span className="text-gradient">Suraksha</span>
+              Wealth <span className="text-gradient">Suraksha</span> IMF LLP
             </h2>
             <DecorativeDivider className="mb-6" />
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">

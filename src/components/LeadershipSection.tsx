@@ -67,7 +67,7 @@ const cardHoverVariants = {
 
 const LeadershipSection = () => {
   return (
-    <section className="relative container px-4 py-32 bg-black overflow-hidden">
+    <section className="relative container px-4 py-32 bg-background overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent opacity-50" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
@@ -106,7 +106,7 @@ const LeadershipSection = () => {
             className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed"
           >
             Meet the visionary leaders driving innovation and excellence in 
-            <span className="text-white font-medium"> financial services</span>
+            <span className="text-foreground font-medium"> financial services</span>
           </motion.p>
         </motion.div>
 
@@ -142,13 +142,13 @@ const LeadershipSection = () => {
                     >
                       {/* Avatar Placeholder */}
                       <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-primary/60 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                        <span className="text-2xl font-bold text-white">
+                        <span className="text-2xl font-bold text-foreground">
                           {member.name.split(' ').map(n => n[0]).join('')}
                         </span>
                       </div>
                       
                       <div className="space-y-3">
-                        <h3 className="text-3xl font-bold text-white group-hover:text-primary transition-colors duration-300">
+                        <h3 className="text-3xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                           {member.name}
                         </h3>
                         
@@ -186,7 +186,7 @@ const LeadershipSection = () => {
                       whileInView={{ opacity: 1 }}
                       transition={{ delay: 0.4 }}
                     >
-                      <h4 className="text-lg font-semibold text-white mb-4">Key Achievements & Experience</h4>
+                      <h4 className="text-lg font-semibold text-foreground mb-4">Key Achievements & Experience</h4>
                       {member.fullBio.map((point, pointIndex) => (
                         <motion.div
                           key={pointIndex}
@@ -200,7 +200,7 @@ const LeadershipSection = () => {
                             className="absolute left-0 top-2 w-3 h-3 rounded-full bg-primary/60 group-hover/item:bg-primary group-hover/item:scale-125 transition-all duration-300"
                             whileHover={{ scale: 1.3, backgroundColor: "hsl(var(--primary))" }}
                           />
-                          <div className="absolute left-1 top-3 w-1 h-1 rounded-full bg-white/80" />
+                          <div className="absolute left-1 top-3 w-1 h-1 rounded-full bg-foreground/80" />
                           <p className="text-gray-400 leading-relaxed group-hover/item:text-gray-300 transition-colors duration-300">
                             {point}
                           </p>
@@ -208,7 +208,7 @@ const LeadershipSection = () => {
                       ))}
                     </motion.div>
 
-                    <Separator className="bg-white/10 mb-6" />
+                    <Separator className="bg-foreground/10 mb-6" />
 
                     {/* Expertise Tags */}
                     <motion.div

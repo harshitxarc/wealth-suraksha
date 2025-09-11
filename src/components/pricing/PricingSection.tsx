@@ -16,7 +16,7 @@ const PricingTier = ({
   features: string[];
   isPopular?: boolean;
 }) => (
-  <CardSpotlight className={`h-full ${isPopular ? "border-primary" : "border-white/10"} border-2`}>
+  <CardSpotlight className={`h-full ${isPopular ? "border-primary" : "border-foreground/10"} border-2`}>
     <div className="relative h-full p-6 flex flex-col">
       {isPopular && (
         <span className="text-xs font-medium bg-primary/10 text-primary rounded-full px-3 py-1 w-fit mb-4">

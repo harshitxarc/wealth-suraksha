@@ -80,7 +80,7 @@ const LiveTicker: React.FC = () => {
   const shimmerCards = Array.from({ length: 12 }).map((_, i) => (
     <div
       key={i}
-      className="inline-block min-w-[140px] px-4 py-2 border rounded-xl bg-white shadow-sm text-center"
+      className="inline-block min-w-[140px] px-4 py-2 border rounded-xl bg-foreground shadow-sm text-center"
     >
       <div className="h-4 w-16 bg-gray-200 rounded mx-auto mb-2 animate-pulse"></div>
       <div className="h-5 w-20 bg-gray-200 rounded mx-auto mb-2 animate-pulse"></div>
@@ -89,7 +89,7 @@ const LiveTicker: React.FC = () => {
   ));
 
   return (
-    <section className="w-full py-2 bg-background/80 font-sans border-t border-b border-white/10 overflow-hidden">
+    <section className="w-full py-2 bg-background/80 font-sans border-t border-b border-foreground/10 overflow-hidden">
       <div className="container mx-auto px-0">
         <div className="flex items-center gap-2 mb-1">
           <span className="text-base font-semibold">
@@ -102,7 +102,7 @@ const LiveTicker: React.FC = () => {
             ? Array.from({ length: 12 }).map((_, i) => (
                 <div
                   key={i}
-                  className="min-w-[110px] rounded-lg shadow flex flex-col items-center px-2 py-2 border border-white/10 bg-background/90"
+                  className="min-w-[110px] rounded-lg shadow flex flex-col items-center px-2 py-2 border border-foreground/10 bg-background/90"
                 >
                   <div className="h-4 w-16 bg-muted rounded mb-1 animate-pulse"></div>
                   <div className="h-5 w-20 bg-muted rounded mb-1 animate-pulse"></div>
@@ -112,7 +112,7 @@ const LiveTicker: React.FC = () => {
             : [...data, ...data].map((item, index) => (
                 <div
                   key={index}
-                  className="min-w-[110px] rounded-lg shadow flex flex-col items-center px-2 py-2 border border-white/10 bg-background/90"
+                  className="min-w-[110px] rounded-lg shadow flex flex-col items-center px-2 py-2 border border-foreground/10 bg-background/90"
                 >
                   <span className="text-[10px] font-medium text-muted-foreground mb-0.5 tracking-wide uppercase">{item.name}</span>
                   <span className="text-base font-bold text-foreground mb-0.5">{item.value.toLocaleString("en-IN")}</span>

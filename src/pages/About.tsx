@@ -75,7 +75,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl md:text-4xl font-normal mb-8 text-gradient">
+              <h2 className="text-3xl md:text-4xl font-normal mb-8 text-primary">
                 Price is what you pay, value is what you get !!
               </h2>
               
@@ -214,7 +214,7 @@ const About = () => {
       </section>
 
       {/* Leadership Section */}
-      <div className="bg-black">
+      <div className="bg-background">
         <LeadershipSection />
       </div>
 
@@ -234,7 +234,7 @@ const About = () => {
           </p>
           <Button
             size="lg"
-            className="button-gradient"
+            className="bg-primary text-white hover:bg-primary/90 rounded-full"
             onClick={() => {
               navigate("/contact");
             }}

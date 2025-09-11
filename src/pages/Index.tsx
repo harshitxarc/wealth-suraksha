@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 // import { FeaturesSection } from "@/components/features/FeaturesSection";
 import { PricingSection } from "@/components/pricing/PricingSection";
-import LogoCarousel from "@/components/LogoCarousel";
+// import LogoCarousel from "@/components/LogoCarousel";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import StatsSection from "@/components/StatsSection";
 import LiveTicker from "@/components/LiveTicker";
@@ -22,7 +22,7 @@ import HeroImageCarousel from "@/components/HeroImageCarousel";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-black text-foreground">
+    <div className="min-h-screen bg-background text-foreground">
       <Navigation />
 
       {/* Full-width Image Carousel */}
@@ -45,7 +45,7 @@ const Index = () => {
       >
         {/* Background */}
         <div 
-          className="absolute inset-0 -z-10 bg-[#0A0A0A]"
+          className="absolute inset-0 -z-10 bg-background"
         />
         
         <motion.div
@@ -66,7 +66,7 @@ const Index = () => {
               <TextGenerateEffect words="Building your Wealth" />
             </span>
             <br />
-            <span className="text-white font-medium">
+            <span className="text-foreground font-medium">
               <TextGenerateEffect words="securing your legacy." />
             </span>
           </h1>
@@ -78,7 +78,7 @@ const Index = () => {
             className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl text-left"
           >
             We believe true wealth is not just about accumulating assets—its about creating a legacy that lasts. With the right vision, expert guidance, and a client-focused approach, we help you grow, protect, and pass on your wealth with confidence.{" "}
-            <span className="text-white">Contact Us in minutes.</span>
+            <span className="text-foreground">Contact Us in minutes.</span>
           </motion.p>
           
           <motion.div
@@ -93,7 +93,7 @@ const Index = () => {
               </Button>
             </Link>
             <Link to="/services">
-              <Button size="lg" variant="link" className="text-white">
+              <Button size="lg" variant="link" className="text-foreground">
                 View Services <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>
@@ -113,7 +113,7 @@ const Index = () => {
       </motion.div> */}
 
       {/* About Section */}
-      <div className="bg-black">
+      <div className="bg-background">
         <AboutSection />
       </div>
 
@@ -121,17 +121,17 @@ const Index = () => {
       <WealthSuraksha />
 
       {/* Logo Carousel */}
-      <div className="bg-black">
+      {/* <div className="bg-background">
         <LogoCarousel />
-      </div>
+      </div> */}
 
       {/* Live Ticker */}
-      <div className="bg-black">
+      <div className="bg-background">
         <LiveTicker />
       </div>
 
       {/* Stats Section */}
-      <div className="bg-black">
+      <div className="bg-background">
         <StatsSection />
       </div>
 
@@ -156,22 +156,22 @@ const Index = () => {
       </div> */}
 
       {/* Pricing Section */}
-      <div id="pricing" className="bg-black">
+      <div id="pricing" className="bg-background">
         <PricingSection />
       </div>
 
       {/* Testimonials Section */}
-      <div className="bg-black">
+      <div className="bg-background">
         <TestimonialsSection />
       </div>
 
       {/* FAQ Section */}
-      <div className="bg-black">
+      <div className="bg-background">
         <FAQSection />
       </div>
 
       {/* Newsletter Section */}
-      <div className="bg-black">
+      <div className="bg-background">
         <NewsletterSection />
       </div>
 
@@ -181,7 +181,7 @@ const Index = () => {
       </div>
 
       {/* CTA Section */}
-      <section className="container px-4 py-20 relative bg-black">
+      <section className="container px-4 py-20 relative bg-background">
         <div 
           className="absolute inset-0 opacity-40"
           style={{
@@ -194,7 +194,7 @@ const Index = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-[#0A0A0A]/80 backdrop-blur-lg border border-white/10 rounded-2xl p-8 md:p-12 text-center relative z-10"
+          className="bg-background backdrop-blur-lg border border-white/10 rounded-2xl p-8 md:p-12 text-center relative z-10"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to Secure Your Financial Future?
@@ -210,7 +210,7 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <div className="bg-black">
+      <div className="bg-background">
         <Footer />
       </div>
     </div>
