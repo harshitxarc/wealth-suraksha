@@ -35,6 +35,7 @@ import RealEstateServices from "./pages/services/RealEstateServices";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import LiveMarket from "@/components/LiveMarket";
+import SignUp from "./pages/SignUp";
 
 const queryClient = new QueryClient();
 
@@ -58,6 +59,7 @@ function AppWithRedirect() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
               <Route path="/services/investment-services" element={<InvestmentServices />} />

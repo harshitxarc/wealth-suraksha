@@ -3,7 +3,7 @@ import { TextRoll } from "./Skiper58";
 import { Command, Menu, ChevronDown} from "lucide-react";
 import { Button } from "./ui/button";
 import { ThemeToggle } from "./ThemeToggle";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetDescription } from "./ui/sheet";
 import { 
   NavigationMenu,
   NavigationMenuContent,
@@ -238,6 +238,8 @@ const Navigation = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent className="bg-background border-border">
+                <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
+                <SheetDescription className="sr-only">Navigate site sections and pages using the mobile menu.</SheetDescription>
                 <div className="flex flex-col gap-4 mt-8">
                   {/* Home link */}
                   <Link

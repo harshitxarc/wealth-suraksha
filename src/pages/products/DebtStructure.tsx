@@ -1,14 +1,31 @@
+// Fix for custom window property
+declare global {
+  interface Window {
+    __NAVBAR_HEIGHT__?: number;
+  }
+}
+// Fix for custom window property
+declare global {
+  interface Window {
+    __NAVBAR_HEIGHT__?: number;
+  }
+}
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import Navigation from "@/components/Navigation";
+import TopBar from "@/components/TopBar";
 import Footer from "@/components/Footer";
 import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const DebtStructure = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div
+      className="min-h-screen bg-background"
+      style={{ paddingTop: typeof window !== 'undefined' && window.__NAVBAR_HEIGHT__ ? window.__NAVBAR_HEIGHT__ : 112 }}
+    >
+  <TopBar />
+  <Navigation />
       
       <main className="pt-32 pb-16">
         <div className="container mx-auto px-6">

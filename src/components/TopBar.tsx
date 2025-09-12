@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { Twitter, Facebook, Instagram, Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const TopBar = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -42,17 +43,20 @@ const TopBar = () => {
           <div className="flex items-center justify-between h-8">
             {/* Left side - Auth buttons */}
             <div className="flex items-center gap-2">
+              <Link to="/signup">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-white hover:text-white hover:bg-white/20 text-xs font-medium px-3 h-6"
+                >
+                  Sign Up
+                </Button>
+              </Link>
               <Button
                 variant="ghost"
                 size="sm"
                 className="text-white hover:text-white hover:bg-white/20 text-xs font-medium px-3 h-6"
-              >
-                Sign Up
-              </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-white hover:text-white hover:bg-white/20 text-xs font-medium px-3 h-6"
+                onClick={() => window.location.href = "https://wealthelite.in/client-login"}
               >
                 Sign In
               </Button>

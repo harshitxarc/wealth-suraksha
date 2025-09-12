@@ -1,8 +1,15 @@
+// Fix for custom window property
+declare global {
+  interface Window {
+    __NAVBAR_HEIGHT__?: number;
+  }
+}
 import { ArrowLeft, TrendingUp, PieChart, Shield, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
+import TopBar from "@/components/TopBar";
 import Footer from "@/components/Footer";
 import investmentServicesImage from "@/assets/investment-services.jpg";
 import { DecorativeDivider } from "@/components/ui/decorative-divider";
@@ -32,8 +39,12 @@ const InvestmentServices = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div
+      className="min-h-screen bg-background"
+  style={{ paddingTop: typeof window !== 'undefined' && window.__NAVBAR_HEIGHT__ ? window.__NAVBAR_HEIGHT__ : 96 }}
+    >
+  <TopBar />
+  <Navigation />
       
       <main className="pt-32 pb-16">
         <div className="container mx-auto px-6">

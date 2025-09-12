@@ -1,8 +1,15 @@
+// Fix for custom window property
+declare global {
+  interface Window {
+    __NAVBAR_HEIGHT__?: number;
+  }
+}
 import { ArrowLeft, Target, PiggyBank, Calendar, Users } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Navigation from "@/components/Navigation";
+import TopBar from "@/components/TopBar";
 import Footer from "@/components/Footer";
 import retirementServicesImage from "@/assets/retirement-services.jpg";
 import { DecorativeDivider } from "@/components/ui/decorative-divider";
@@ -32,8 +39,12 @@ const RetirementServices = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
+    <div
+      className="min-h-screen bg-background"
+  style={{ paddingTop: typeof window !== 'undefined' && window.__NAVBAR_HEIGHT__ ? window.__NAVBAR_HEIGHT__ : 96 }}
+    >
+  <TopBar />
+  <Navigation />
       
       <main className="pt-32 pb-16">
         <div className="container mx-auto px-6">
@@ -47,8 +58,8 @@ const RetirementServices = () => {
             
             <div className="grid lg:grid-cols-2 gap-8 items-center mb-12">
               <div>
-                <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-                  Retirement Services
+                <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight">
+                  Retirement <span className="text-gradient">Services</span>
                 </h1>
                 <DecorativeDivider className="mb-6" />
                 <p className="text-xl text-muted-foreground mb-8">
