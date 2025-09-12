@@ -19,11 +19,14 @@ import PartnersSection from "@/components/PartnersSection";
 import Footer from "@/components/Footer";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import HeroImageCarousel from "@/components/HeroImageCarousel";
+import TopBar from "@/components/TopBar";
 
 const Index = () => {
   return (
+    <>
     <div className="min-h-screen bg-background text-foreground">
-      <Navigation />
+  <TopBar />
+  <Navigation />
 
       {/* Full-width Image Carousel */}
       <motion.div
@@ -214,6 +217,7 @@ const Index = () => {
         <Footer />
       </div>
     </div>
+    </>
   );
 };
 

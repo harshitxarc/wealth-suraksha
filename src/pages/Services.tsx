@@ -1,5 +1,12 @@
+// Fix for custom window property
+declare global {
+  interface Window {
+    __NAVBAR_HEIGHT__?: number;
+  }
+}
 import { motion } from "framer-motion";
 import { Shield, TrendingUp, Zap, Users, BarChart3, Globe } from "lucide-react";
+import TopBar from "@/components/TopBar";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -44,8 +51,12 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navigation />
+    <div
+      className="min-h-screen bg-background text-foreground"
+      style={{ paddingTop: typeof window !== 'undefined' && window.__NAVBAR_HEIGHT__ ? window.__NAVBAR_HEIGHT__ : 112 }}
+    >
+  <TopBar />
+  <Navigation />
       
       {/* Hero Section */}
       <motion.section 

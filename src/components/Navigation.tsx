@@ -14,10 +14,30 @@ import {
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "./ui/collapsible";
 import { Link, useLocation } from "react-router-dom";
 
+
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [topBarVisible, setTopBarVisible] = useState(true);
   const location = useLocation();
+
+  // Listen for TopBar visibility changes
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    const handler = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down, navbar should overlap TopBar
+        setTopBarVisible(false);
+      } else {
+        // Scrolling up, navbar should leave space for TopBar
+        setTopBarVisible(true);
+      }
+      lastScrollY = currentScrollY;
+    };
+    window.addEventListener("scroll", handler, { passive: true });
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -83,16 +103,18 @@ const Navigation = () => {
     { name: "Terms", href: "/terms", type: "link" }
   ];
 
+  // Expose navbar height and top offset for page padding
+  const navHeight = isScrolled ? 80 : 112; // h-20 = 80px, h-28 = 112px
+  const navTop = topBarVisible ? 32 : 0; // top-8 = 32px
+  window.__NAVBAR_HEIGHT__ = navHeight + navTop;
   return (
     <header
-      // className={`fixed top-3.5 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 rounded-full ${
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled 
-          // ? "h-14 bg-[#1B1B1B]/40 backdrop-blur-xl border border-white/10 scale-95 w-[90%] max-w-2xl" 
-          // : "h-14 bg-[#1B1B1B] w-[95%] max-w-3xl"
-          ? "h-20 bg-card/95 backdrop-blur-xl border-b border-border" 
-          : "h-28 bg-card border-b border-border"
-      }`}
+      className={`fixed left-0 right-0 z-50 transition-all duration-300
+        ${topBarVisible ? 'top-8' : 'top-0'}
+        ${isScrolled
+          ? "h-20 bg-card/95 backdrop-blur-xl border-b border-border"
+          : "h-28 bg-card border-b border-border"}
+      `}
     >
       {/* <div className="mx-auto h-full px-6"> */}
       <div className="container mx-auto h-full px-6">
