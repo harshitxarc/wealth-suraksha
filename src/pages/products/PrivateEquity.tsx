@@ -33,7 +33,7 @@ const PrivateEquity = () => {
           </Link>
           
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight">Private Equity</h1>
+            <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight text-primary">Private Equity</h1>
             <DecorativeDivider className="mb-6" />
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">

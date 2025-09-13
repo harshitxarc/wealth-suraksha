@@ -48,7 +48,79 @@ const AboutSection = () => {
             </p>
           </motion.div>
 
+          {/* Right column - Video */}
           <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+              className="hidden lg:block relative ml-12"
+          >
+            <div className="glass rounded-2xl overflow-hidden relative w-80">
+              {/* Glow effect behind video */}
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-[#22c55e]/20 blur-xl -z-10 scale-110" />
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full h-auto aspect-[9/16] object-contain bg-black"
+              >
+                <source src="/assets/right-col-vid.mp4" type="video/mp4" />
+                {/* Fallback image if video fails to load */}
+                <img
+                  src="/lovable-uploads/c32c6788-5e4a-4fee-afee-604b03113c7f.png"
+                  alt="Wealth Suraksha Video"
+                  className="w-full h-auto object-contain bg-black"
+                />
+              </video>
+              {/* Overlay gradient for better visual appeal */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-black/20" />
+              {/* Floating themed elements */}
+              <motion.div
+                animate={{ 
+                  y: [0, -20, 0],
+                  opacity: [0.6, 1, 0.6],
+                  rotate: [0, 10, 0]
+                }}
+                transition={{ 
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="absolute top-8 right-6 w-4 h-4 bg-primary rounded-full shadow-lg shadow-primary/50"
+              />
+              <motion.div
+                animate={{ 
+                  y: [0, -15, 0],
+                  opacity: [0.7, 1, 0.7],
+                  scale: [1, 1.1, 1]
+                }}
+                transition={{ 
+                  duration: 3,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 1.5
+                }}
+                className="absolute bottom-12 left-6 w-3 h-3 bg-[#22c55e] rounded-full shadow-lg shadow-[#22c55e]/50"
+              />
+              <motion.div
+                animate={{ 
+                  y: [0, -10, 0],
+                  opacity: [0.5, 0.9, 0.5]
+                }}
+                transition={{ 
+                  duration: 2.5,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                  delay: 0.8
+                }}
+                className="absolute top-1/2 left-4 w-2 h-2 bg-white/80 rounded-full"
+              />
+            </div>
+          </motion.div>
+
+          {/* <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
@@ -71,7 +143,7 @@ const AboutSection = () => {
                 </p>
               </motion.div>
             ))}
-          </motion.div>
+          </motion.div> */}
         </div>
       </div>
     </section>

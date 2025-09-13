@@ -33,7 +33,7 @@ const PMS = () => {
           </Link>
           
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight">Portfolio Management Services (PMS)</h1>
+            <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight text-primary">Portfolio Management Services (PMS)</h1>
             <DecorativeDivider className="mb-6" />
             
             <div className="grid md:grid-cols-2 gap-8 mb-12">

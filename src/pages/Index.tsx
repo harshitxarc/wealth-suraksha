@@ -18,7 +18,7 @@ import NewsletterSection from "@/components/NewsletterSection";
 import PartnersSection from "@/components/PartnersSection";
 import Footer from "@/components/Footer";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
-import HeroImageCarousel from "@/components/HeroImageCarousel";
+// import HeroImageCarousel from "@/components/HeroImageCarousel";
 import TopBar from "@/components/TopBar";
 
 const Index = () => {
@@ -29,14 +29,14 @@ const Index = () => {
   <Navigation />
 
       {/* Full-width Image Carousel */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6 }}
         className="w-full mt-32"
       >
         <HeroImageCarousel />
-      </motion.div>
+      </motion.div> */}
       
       {/* Hero Section */}
       <motion.section 
@@ -44,20 +44,31 @@ const Index = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         // className="relative container px-4 pt-40 pb-20"
-        className="relative container px-4 pt-36 pb-20"
+        className="relative min-h-screen flex items-center"
       >
-        {/* Background */}
+        {/* Background Image */}
         <div 
-          className="absolute inset-0 -z-10 bg-background"
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: 'url("/img-uploads/bg-image.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat'
+          }}
         />
+        {/* Overlay for better text readability */}
+        <div className="absolute inset-0 z-0 bg-black/40" />
+        
+        <div className="container px-4 py-20">
         
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
-          className="inline-block mb-4 px-4 py-1.5 rounded-full glass"
+          className="inline-block mb-4 px-4 py-1.5 rounded-full z-10 relative"
+          style={{ background: '#00000033', display: 'inline-block' }}
         >
-          <span className="text-sm font-medium">
+          <span className="text-sm font-medium" style={{ color: '#f2f2f2' }}>
             <Command className="w-4 h-4 inline-block mr-2" />
             Wealth Suraksha IMF LLP
           </span>
@@ -65,11 +76,11 @@ const Index = () => {
         
         <div className="max-w-4xl relative z-10">
           <h1 className="text-5xl md:text-7xl font-normal mb-4 tracking-tight text-left">
-            <span className="text-gray-200">
+            <span style={{ color: '#E5E7EB' }}>
               <TextGenerateEffect words="Building your Wealth" />
             </span>
             <br />
-            <span className="text-foreground font-medium">
+            <span className="text-white font-medium">
               <TextGenerateEffect words="securing your legacy." />
             </span>
           </h1>
@@ -78,10 +89,10 @@ const Index = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-lg md:text-xl text-gray-200 mb-8 max-w-2xl text-left"
+              className="text-lg md:text-xl !text-gray-200 mb-8 max-w-2xl text-left"
           >
             We believe true wealth is not just about accumulating assets—its about creating a legacy that lasts. With the right vision, expert guidance, and a client-focused approach, we help you grow, protect, and pass on your wealth with confidence.{" "}
-            <span className="text-foreground">Contact Us in minutes.</span>
+            <span className="text-white">Contact Us in minutes.</span>
           </motion.p>
           
           <motion.div
@@ -91,16 +102,17 @@ const Index = () => {
             className="flex flex-col sm:flex-row gap-4 items-start"
           >
             <Link to="/contact">
-              <Button size="lg" className="button-gradient">
+              <Button size="lg" className="bg-primary text-white hover:bg-primary/80 rounded-full">
                 Contact Us Now
               </Button>
             </Link>
             <Link to="/services">
-              <Button size="lg" variant="link" className="text-foreground">
+              <Button size="lg" variant="link" className="text-white">
                 View Services <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </Link>
           </motion.div>
+        </div>
         </div>
       
       </motion.section>

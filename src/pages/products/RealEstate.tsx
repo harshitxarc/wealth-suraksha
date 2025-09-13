@@ -31,7 +31,7 @@ const RealEstate = () => {
           </Link>
           
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight">Real Estate</h1>
+            <h1 className="text-6xl md:text-7xl font-light mb-8 tracking-tight text-primary">Real Estate</h1>
             <DecorativeDivider className="mb-6" />
             
             <div className="prose prose-lg max-w-none">
