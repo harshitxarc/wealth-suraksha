@@ -122,8 +122,11 @@ const Navigation = () => {
           <Link to="/" className="flex items-center gap-3">
             {/* <Command className="w-5 h-5 text-primary" /> */}
             <img src="/img-uploads/ws-logo.png" alt="Wealth Suraksha Logo" className="w-20 h-20 mr-4 rounded-full object-contain align-middle" />
-            <span className="font-bold text-2xl">
-              Wealth<span className="bg-gradient-to-r from-primary to-green-400 dark:from-green-300 dark:to-primary bg-clip-text text-transparent">Suraksha</span>
+            <span className="text-2xl font-semibold tracking-tight text-neutral-800 dark:text-neutral-200">
+              Wealth
+              <span className="bg-gradient-to-r from-primary to-green-400 dark:from-green-300 dark:to-primary bg-clip-text text-transparent text-2xl font-semibold tracking-tight">
+                Suraksha
+              </span>
             </span>
           </Link>
 
