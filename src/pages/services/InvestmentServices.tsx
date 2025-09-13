@@ -11,7 +11,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Navigation from "@/components/Navigation";
 import TopBar from "@/components/TopBar";
 import Footer from "@/components/Footer";
-import investmentServicesImage from "@/assets/investment-services.jpg";
+// ...removed import for public/assets usage...
 import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const InvestmentServices = () => {
@@ -68,7 +68,7 @@ const InvestmentServices = () => {
               </div>
               <div className="relative rounded-xl overflow-hidden">
                 <img 
-                  src={investmentServicesImage} 
+                  src="/assets/investment-services.jpg" 
                   alt="Professional investment services consultation" 
                   className="w-full h-48 md:h-64 object-cover"
                 />
