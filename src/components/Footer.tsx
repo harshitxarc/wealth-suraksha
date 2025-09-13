@@ -40,7 +40,7 @@ const Footer = () => {
             </div>
 
             <div className="space-y-5">
-              <h4 className="font-semibold text-lg mb-2 border-b border-white/10 pb-1">Our Services</h4>
+              <h4 className="font-semibold text-lg mb-2 border-b-[1px] border-[#005985] dark:border-[#e5e7eb] pb-1">Our Services</h4>
               <ul className="space-y-2">
                 <li>
                   <Link to="/services/investment-services" className="text-sm text-muted-foreground hover:text-primary transition-colors">Investment Services</Link>
@@ -67,7 +67,7 @@ const Footer = () => {
             </div>
 
             <div className="space-y-5">
-              <h4 className="font-semibold text-lg mb-2 border-b border-white/10 pb-1">Important Links</h4>
+              <h4 className="font-semibold text-lg mb-2 border-b-[1px] border-[#005985] dark:border-[#e5e7eb] pb-1">Quick Links</h4>
               <ul className="space-y-2">
                 <li>
                   <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Home</Link>
@@ -103,7 +103,7 @@ const Footer = () => {
               </ul>
             </div> */}
             <div className="space-y-5">
-              <h4 className="font-semibold text-lg mb-2 border-b border-white/10 pb-1">Get In Touch</h4>
+              <h4 className="font-semibold text-lg mb-2 border-b-[1px] border-[#005985] dark:border-[#e5e7eb] pb-1">Get In Touch</h4>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <MapPin className="w-5 h-5 mt-1 text-muted-foreground" />

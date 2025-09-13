@@ -28,93 +28,92 @@ const Index = () => {
   <TopBar />
   <Navigation />
 
-      {/* Full-width Image Carousel */}
-      {/* <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6 }}
-        className="w-full mt-32"
-      >
-        <HeroImageCarousel />
-      </motion.div> */}
-      
+
       {/* Hero Section */}
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        // className="relative container px-4 pt-40 pb-20"
-        className="relative min-h-screen flex items-center"
+        className="relative min-h-screen flex items-center overflow-hidden"
       >
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 z-0"
+        {/* Parallax Background Image with Zoom Animation */}
+        <motion.div
+          className="absolute inset-0 z-0 will-change-transform"
           style={{
             backgroundImage: 'url("/img-uploads/bg-image.jpg")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+          initial={{ scale: 1.1, y: 0 }}
+          animate={{ scale: 1.2, y: -30 }}
+          transition={{
+            duration: 18,
+            repeat: Infinity,
+            repeatType: "reverse",
+            ease: "easeInOut",
           }}
         />
+
         {/* Overlay for better text readability */}
-        <div className="absolute inset-0 z-0 bg-black/40" />
-        
-        <div className="container px-4 py-20">
-        
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.2 }}
-          className="inline-block mb-4 px-4 py-1.5 rounded-full z-10 relative"
-          style={{ background: '#00000033', display: 'inline-block' }}
-        >
-          <span className="text-sm font-medium" style={{ color: '#f2f2f2' }}>
-            <Command className="w-4 h-4 inline-block mr-2" />
-            Wealth Suraksha IMF LLP
-          </span>
-        </motion.div>
-        
-        <div className="max-w-4xl relative z-10">
-          <h1 className="text-5xl md:text-7xl font-normal mb-4 tracking-tight text-left">
-            <span style={{ color: '#E5E7EB' }}>
-              <TextGenerateEffect words="Building your Wealth" />
-            </span>
-            <br />
-            <span className="text-white font-medium">
-              <TextGenerateEffect words="securing your legacy." />
-            </span>
-          </h1>
-          
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-              className="text-lg md:text-xl !text-gray-200 mb-8 max-w-2xl text-left"
-          >
-            We believe true wealth is not just about accumulating assets—its about creating a legacy that lasts. With the right vision, expert guidance, and a client-focused approach, we help you grow, protect, and pass on your wealth with confidence.{" "}
-            <span className="text-white">Contact Us in minutes.</span>
-          </motion.p>
-          
+        <div className="absolute inset-0 z-0 bg-black/40 pointer-events-none" />
+
+        {/* Hero Content */}
+        <div className="container px-4 py-20 relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="flex flex-col sm:flex-row gap-4 items-start"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="inline-block mb-4 px-4 py-1.5 rounded-full z-10 relative"
+            style={{ background: '#00000033', display: 'inline-block' }}
           >
-            <Link to="/contact">
-              <Button size="lg" className="bg-primary text-white hover:bg-primary/80 rounded-full">
-                Contact Us Now
-              </Button>
-            </Link>
-            <Link to="/services">
-              <Button size="lg" variant="link" className="text-white">
-                View Services <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </Link>
+            <span className="text-sm font-medium" style={{ color: '#f2f2f2' }}>
+              <Command className="w-4 h-4 inline-block mr-2" />
+              Wealth Suraksha IMF LLP
+            </span>
           </motion.div>
+
+          <div className="max-w-4xl relative z-10">
+            <h1 className="text-5xl md:text-7xl font-normal mb-4 tracking-tight text-left">
+              <span style={{ color: '#E5E7EB' }} className="font-light">
+                <TextGenerateEffect words="Building your Wealth" />
+              </span>
+              <br />
+              <span className="text-white font-light">
+                <TextGenerateEffect words="securing your legacy." />
+              </span>
+            </h1>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              className="text-lg md:text-xl !text-gray-200 mb-8 max-w-2xl text-left"
+            >
+              We believe true wealth is not just about accumulating assets—its about creating a legacy that lasts.{" "}
+              <span className="text-white">Contact Us in minutes.</span>
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+              className="flex flex-col sm:flex-row gap-4 items-start"
+            >
+              <Link to="/contact">
+                <Button
+                  size="lg"
+                  className="bg-[#005985]/80 dark:bg-primary/80 text-white hover:bg-[#005985]/90 dark:hover:bg-primary/90 focus:ring-2 focus:ring-primary/40 rounded-full transition-colors backdrop-blur-xl border border-[#005985]/30 dark:border-primary/30 shadow-lg"
+                >
+                  Contact Us Now
+                </Button>
+              </Link>
+              <Link to="/about">
+                <Button size="lg" variant="link" className="text-white">
+                  Wealth Suraksha <ArrowRight className="ml-2 w-4 h-4" />
+                </Button>
+              </Link>
+            </motion.div>
+          </div>
         </div>
-        </div>
-      
       </motion.section>
 
       {/* Full-width Image Carousel */}

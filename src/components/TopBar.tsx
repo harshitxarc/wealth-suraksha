@@ -38,7 +38,7 @@ const TopBar = () => {
         isVisible ? "z-[100] translate-y-0" : "z-0 -translate-y-full"
       }`}
     >
-  <div className="bg-[#005985] dark:bg-primary border-b border-[#005985]/30 dark:border-primary/30">
+  <div className="bg-[#005985]/80 dark:bg-primary/80 border-b border-[#005985]/30 dark:border-primary/30 backdrop-blur-xl">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-8">
             {/* Left side - Auth buttons */}

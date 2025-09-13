@@ -113,7 +113,7 @@ const Navigation = () => {
         ${topBarVisible ? 'top-8' : 'top-0'}
         ${isScrolled
           ? "h-20 bg-card/95 backdrop-blur-xl border-b border-border"
-          : "h-28 bg-card border-b border-border"}
+          : "h-28 bg-card/60 backdrop-blur-2xl border-b border-border"}
       `}
     >
       {/* <div className="mx-auto h-full px-6"> */}
@@ -133,7 +133,7 @@ const Navigation = () => {
             <Link
               key="Home"
               to="/"
-              className={`group text-sm transition-all duration-300 ${location.pathname === "/" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+              className={`group text-sm font-semibold transition-all duration-300 ${location.pathname === "/" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               <TextRoll className="inline-block group-hover:text-[#005985] dark:group-hover:text-primary">Home</TextRoll>
@@ -142,7 +142,7 @@ const Navigation = () => {
             <Link
               key="About Us"
               to="/about"
-              className={`group text-sm transition-all duration-300 ${location.pathname === "/about" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+              className={`group text-sm font-semibold transition-all duration-300 ${location.pathname === "/about" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               <TextRoll className="inline-block group-hover:text-[#005985] dark:group-hover:text-primary">About Us</TextRoll>
@@ -153,7 +153,7 @@ const Navigation = () => {
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="group text-sm text-muted-foreground hover:text-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent">
-                    <TextRoll className="inline-block group-hover:text-[#005985] dark:group-hover:text-primary">Services</TextRoll>
+                    <TextRoll className="inline-block font-semibold group-hover:text-[#005985] dark:group-hover:text-primary">Services</TextRoll>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     {/* <div className="flex flex-col gap-1 p-3 w-56 bg-popover border border-border rounded-md shadow-lg"> */}
@@ -176,7 +176,7 @@ const Navigation = () => {
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="group text-sm text-muted-foreground hover:text-foreground bg-transparent hover:bg-transparent focus:bg-transparent data-[active]:bg-transparent data-[state=open]:bg-transparent">
-                    <TextRoll className="inline-block group-hover:text-[#005985] dark:group-hover:text-primary">Our Products</TextRoll>
+                    <TextRoll className="inline-block font-semibold group-hover:text-[#005985] dark:group-hover:text-primary">Our Products</TextRoll>
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <div className="flex flex-col gap-1 p-3 w-56 bg-popover border border-border rounded-md shadow-lg">
@@ -202,7 +202,7 @@ const Navigation = () => {
             <Link
               key="Blog"
               to="/blog"
-              className={`group text-sm transition-all duration-300 ${location.pathname === "/blog" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+              className={`group text-sm font-semibold transition-all duration-300 ${location.pathname === "/blog" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               <TextRoll className="inline-block group-hover:text-[#005985] dark:group-hover:text-primary">Blog</TextRoll>
@@ -211,16 +211,16 @@ const Navigation = () => {
             <Link
               key="Terms"
               to="/terms"
-              className={`group text-sm transition-all duration-300 ${location.pathname === "/terms" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
+              className={`group text-sm font-semibold transition-all duration-300 ${location.pathname === "/terms" ? "text-foreground" : "text-muted-foreground hover:text-foreground"}`}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               <TextRoll className="inline-block group-hover:text-[#005985] dark:group-hover:text-primary">Terms</TextRoll>
             </Link>
             <ThemeToggle />
             <Link to="/contact">
-              <Button 
+              <Button
                 size="sm"
-                className="bg-primary text-white hover:bg-[#4ADE80] focus:ring-2 focus:ring-primary/40 rounded-full transition-colors"
+                className="bg-[#005985]/80 dark:bg-primary/80 text-white hover:bg-[#005985]/90 dark:hover:bg-primary/90 focus:ring-2 focus:ring-primary/40 rounded-full transition-colors backdrop-blur-xl border border-[#005985]/30 dark:border-primary/30 shadow-lg"
                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
               >
                 Contact Us
