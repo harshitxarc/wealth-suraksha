@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { DecorativeDivider } from "@/components/ui/decorative-divider";
 
 const WhyChooseUsSection = () => {
   const features = [
@@ -42,11 +43,12 @@ const WhyChooseUsSection = () => {
           <h2 className="text-4xl md:text-5xl font-normal mb-1 text-white">
             Why Choose Us
           </h2>
-          <div className="flex items-center justify-center gap-2 mb-2">
+          <DecorativeDivider className="mb-6 justify-center" />
+          {/* <div className="flex items-center justify-center gap-2 mb-2">
             <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent w-20"></div>
             <div className="w-2 h-2 bg-primary rotate-45"></div>
             <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent w-20"></div>
-          </div>
+          </div> */}
           <p className="text-white/90 text-lg max-w-3xl mx-auto">
             Discover the advantages that set us apart and make us the preferred choice for your financial journey.
           </p>
