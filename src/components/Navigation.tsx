@@ -128,9 +128,9 @@ const Navigation = () => {
             <img 
               src="/img-uploads/ws-logo.png" 
               alt="Wealth Suraksha Logo" 
-              className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full object-contain" 
+              className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-full object-contain" 
             />
-            <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold tracking-tight text-neutral-800 dark:text-neutral-200 whitespace-nowrap">
+            <span className="text-lg sm:text-xl md:text-2xl font-semibold tracking-tight text-neutral-800 dark:text-neutral-200 whitespace-nowrap">
               Wealth{" "}
               <span className="bg-gradient-to-r from-primary to-green-400 dark:from-green-300 dark:to-primary bg-clip-text text-transparent">
                 Suraksha
