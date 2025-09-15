@@ -112,8 +112,8 @@ const Navigation = () => {
       className={`fixed left-0 right-0 z-50 transition-all duration-300
         ${topBarVisible ? 'top-8' : 'top-0'}
         ${isScrolled
-          ? "h-20 bg-card/95 backdrop-blur-xl border-b border-border"
-          : "h-28 bg-card/60 backdrop-blur-2xl border-b border-border"}
+          ? "h-20 bg-card/95 backdrop-blur-md border-b border-border"
+          : "h-28 bg-card/90 backdrop-blur-sm border-b border-border"}
       `}
     >
       {/* <div className="mx-auto h-full px-6"> */}
