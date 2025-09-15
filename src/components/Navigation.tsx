@@ -119,12 +119,20 @@ const Navigation = () => {
       {/* <div className="mx-auto h-full px-6"> */}
       <div className="container mx-auto h-full px-6">
         <nav className="flex items-center justify-between h-full">
-          <Link to="/" className="flex items-center gap-3">
+          {/* Logo & Brand */}
+          <Link 
+            to="/" 
+            className="flex items-center gap-2 flex-shrink-0"
+          >
             {/* <Command className="w-5 h-5 text-primary" /> */}
-            <img src="/img-uploads/ws-logo.png" alt="Wealth Suraksha Logo" className="w-20 h-20 mr-4 rounded-full object-contain align-middle" />
-            <span className="text-2xl font-semibold tracking-tight text-neutral-800 dark:text-neutral-200">
-              Wealth
-              <span className="bg-gradient-to-r from-primary to-green-400 dark:from-green-300 dark:to-primary bg-clip-text text-transparent text-2xl font-semibold tracking-tight">
+            <img 
+              src="/img-uploads/ws-logo.png" 
+              alt="Wealth Suraksha Logo" 
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full object-contain" 
+            />
+            <span className="text-base sm:text-lg md:text-xl lg:text-2xl font-semibold tracking-tight text-neutral-800 dark:text-neutral-200 whitespace-nowrap">
+              Wealth{" "}
+              <span className="bg-gradient-to-r from-primary to-green-400 dark:from-green-300 dark:to-primary bg-clip-text text-transparent">
                 Suraksha
               </span>
             </span>
@@ -232,7 +240,7 @@ const Navigation = () => {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="md:hidden flex items-center gap-3 flex-shrink-0">
             <ThemeToggle />
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild>
