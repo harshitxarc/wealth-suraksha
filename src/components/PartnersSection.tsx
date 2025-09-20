@@ -207,4 +207,4 @@ const PartnersSection = () => {
   );
 };
 
-export default PartnersSection;
+export default PartnersSection; 
